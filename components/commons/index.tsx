@@ -4,3 +4,6 @@ export { Grid } from "./Grid";
 export { Title } from "./Title";
 export { Header } from "./Header";
 export { Container } from "./Container";
+export { RightGrid } from "./RightGrid";
+export { LeftGrid } from "./LeftGrid";
+export { Cards } from "./Cards";

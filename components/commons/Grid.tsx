@@ -7,5 +7,6 @@ export const Grid = styled.div`
   @media (max-width: 768px) {
     display: flex;
     flex-direction: column;
+    gap: 10px;
   }
 `;

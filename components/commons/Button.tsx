@@ -20,9 +20,10 @@ export const Button = styled.button`
   font-size: 14px;
   cursor: pointer;
   &:hover {
-    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px #f4ebff;
     border: 1px solid #41bfb3;
     background: #ffffff;
     color: #41bfb3;
+    padding: 10px 16px;
+    transition: 0.5s ease-in-out;
   }
 `;
