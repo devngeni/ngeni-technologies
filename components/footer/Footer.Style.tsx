@@ -33,6 +33,10 @@ export const FooterText = styled.div`
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
+  &:hover {
+    color: #88d7cf;
+    cursor: pointer;
+  }
 `;
 export const FooterTitle = styled.div`
   font-weight: 600;
@@ -43,13 +47,16 @@ export const FooterTitle = styled.div`
 `;
 
 export const FooterCopyRight = styled(FooterGrid)`
-justify-content: space-around;
-align-content: center;
-padding: 40px 0px;
+  justify-content: space-around;
+  align-content: center;
+  padding: 40px 0px;
 `;
 
 export const FooterIcons = styled.div`
-display: flex;
-justify-content: space-evenly;
-gap: 40px;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 40px;
+  img {
+    cursor: pointer;
+  }
 `;
