@@ -8,7 +8,7 @@ export const Container = styled.div`
   padding: 20px 0px;
   @media (max-width: 768px) {
     img {
-      width: 20%;
+      width: 97%;
     }
   }
 `;

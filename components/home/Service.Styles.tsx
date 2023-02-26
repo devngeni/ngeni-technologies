@@ -28,7 +28,7 @@ export const ServiceHeader = styled(Header)`
   color: #88d7cf;
 `;
 export const ServiceTitle2 = styled.div`
-  font-weight: 700;
+  font-weight: 600;
   font-size: 24px;
   line-height: 150%;
   letter-spacing: 0.02em;
@@ -47,29 +47,36 @@ export const ServiceText = styled.div`
   color: #41beb2;
 `;
 export const ServiceWrapper = styled.div`
-
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
 `;
 export const TestimonialWrapper = styled.div`
-display: flex;
-justify-content: center;
-align-items: center;
-text-align: center;
-flex-direction: column;
-gap: 40px;
-padding: 20px;
-h1 {
-  font-weight: 500;
-  font-size: 42px;
-  line-height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  letter-spacing: -0.02em;
-  color: #101828;
-  overflow-wrap: break-word;
-  white-space: pre-line;
-  word-wrap: break-word;
-  width: 70vw;
-}
-`
+  flex-direction: column;
+  gap: 40px;
+  padding: 20px;
+  h1 {
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #101828;
+    overflow-wrap: break-word;
+    white-space: pre-line;
+    word-wrap: break-word;
+    width: 70vw;
+  }
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 24px;
+    }
+  }
+`;
 export const ServiceIcon = styled.div`
   display: flex;
   align-items: center;
