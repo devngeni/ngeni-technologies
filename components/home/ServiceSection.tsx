@@ -26,7 +26,8 @@ import Contract from "../../public/Contract.svg";
 import Audience from "../../public/Audience.svg";
 import { GridCenterItems } from "../commons/LeftGrid";
 import { TeamSection } from "./Team";
-import TestimonialSection from "./Testimonials";
+import Dev from "../../public/Dev.svg";
+import Pyro from "../../public/Pyro.svg";
 export default function ServiceSection() {
   return (
     <Wrapper className="service-section">
@@ -100,7 +101,7 @@ export default function ServiceSection() {
         </ServiceCards>
 
         <ServiceCards>
-          <Image src={Audience} width="336" height={240} alt="audience image" />
+          <Image src={Dev} width="336" height={240} alt="audience image" />
           <ServiceHeader>Development</ServiceHeader>
           <CardWrapper>
             <ServiceTitle2>DevOps</ServiceTitle2>
@@ -117,7 +118,7 @@ export default function ServiceSection() {
         </ServiceCards>
 
         <ServiceCards>
-          <Image src={Audience} width="336" height={240} alt="audience image" />
+          <Image src={Pyro} width="336" height={240} alt="audience image" />
           <ServiceHeader>Development</ServiceHeader>
           <CardWrapper>
             <ServiceTitle2>Bots Development</ServiceTitle2>
