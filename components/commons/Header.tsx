@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Header = styled.header`
+export const Header = styled.div`
 font-weight: 800;
 font-size: 20px;
 line-height: 24px;

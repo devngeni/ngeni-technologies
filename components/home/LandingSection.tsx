@@ -28,9 +28,9 @@ import Polygon from "../../public/Polygon.svg";
 import Harmony from "../../public/Harmony.svg";
 export default function LandingSection() {
   return (
-    <Wrapper>
-      <Grid>
-        <LeftGrid className="landing-page-left">
+    <Wrapper className="landing-page-left">
+      <Grid className="landing">
+        <LeftGrid>
           <Title>
             Level up!
             <br /> your Blockchain

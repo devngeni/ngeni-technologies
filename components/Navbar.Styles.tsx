@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Grid, Header } from "./commons";
 
 export const NavbarText = styled.h1`
   font-weight: 500;
@@ -13,3 +14,19 @@ export const NavbarText = styled.h1`
     color: #41bfb3;
   }
 `;
+
+export const NavbarWrapper = styled.div`
+width: 100%;
+margin: 20px auto;
+align-items: center;
+display: content;
+`;
+
+export const NavbarHeader = styled(Header)`
+align-items: center;
+display: flex;
+justify-content: center;
+`
+export const NavbarGrid = styled(Grid)`
+grid-template-columns: 1fr 2fr;
+`
