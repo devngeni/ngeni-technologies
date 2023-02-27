@@ -17,9 +17,10 @@ export const NavbarText = styled.h1`
 
 export const NavbarWrapper = styled.div`
 width: 100%;
-margin: 20px auto;
+padding: 20px auto;
 align-items: center;
 display: content;
+background-color: ${({ theme }) => theme.colors.background};
 `;
 
 export const NavbarHeader = styled(Header)`
@@ -29,4 +30,6 @@ justify-content: center;
 `
 export const NavbarGrid = styled(Grid)`
 grid-template-columns: 1fr 2fr;
+padding: 20px 0;
+align-content: center;
 `

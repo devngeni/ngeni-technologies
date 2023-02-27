@@ -52,7 +52,7 @@ const hyphenateWords = (data: DataType[]): DataType[] => {
   
       for (const [key, value] of Object.entries(item)) {
         if (typeof value === 'string') {
-          newItem[key] = value.replace(/(\S{10})(\S{1,})/g, '$1-$2');
+          newItem[key] = value.replace(/(\S{15})(\S{1,})/g, '$1-$2');
         } else {
           newItem[key] = value;
         }

@@ -1,22 +1,22 @@
 import Head from "next/head";
-import { ThemeProps } from "styled-components";
-import { Footer } from "./footer";
-import Navbar from "./NavbarAcademy";
+import { ThemeProvider } from "styled-components";
+import Navbar from "./Navbar";
+
 interface LayoutProps {
   children: React.ReactNode;
 }
-export default function Layout({ children }: LayoutProps) {
+
+export default function LabsLayout({ children }: LayoutProps) {
   return (
     <>
       <Head>
-        <title>Ngeni Academy</title>
-        <meta name="description" content="ngeni idensity program" />
+        <title>Ngeni Labs</title>
+        <meta name="description" content="ngeni labs" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
       <main>{children}</main>
-      <Footer />
     </>
   );
 }

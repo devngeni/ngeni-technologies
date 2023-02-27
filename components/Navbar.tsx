@@ -1,16 +1,25 @@
-import { Button, Container, Grid, Header, Title, Wrapper } from "./commons";
-import { NavbarGrid, NavbarHeader, NavbarText, NavbarWrapper } from "./Navbar.Styles";
+import { Container } from "./commons";
+import {
+  NavbarGrid,
+  NavbarHeader,
+  NavbarText,
+  NavbarWrapper,
+} from "./Navbar.Styles";
+import Logo from "../public/Logo.svg";
+import Image from "next/image";
 
 export default function Navbar() {
   return (
-    <NavbarWrapper>
+    <NavbarWrapper className="navbar-theme">
       <NavbarGrid>
-        <NavbarHeader>NGENI ACADEMY</NavbarHeader>
-        <Container>
-          <NavbarText>Programs</NavbarText>
-          <NavbarText>Hackathons</NavbarText>
-          <NavbarText>Resources</NavbarText>
-          <Button>Enroll Today</Button>
+        <NavbarHeader>
+          <Image src={Logo} width={256} height={50} alt="logo" />
+        </NavbarHeader>
+        <Container style={{padding: "0"}}>
+          <NavbarText>Developer Services</NavbarText>
+          <NavbarText>Acadamey</NavbarText>
+          <NavbarText>Design Services</NavbarText>
+          <NavbarText>Case Studies</NavbarText>
         </Container>
       </NavbarGrid>
     </NavbarWrapper>

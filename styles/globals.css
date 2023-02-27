@@ -14,7 +14,12 @@ body {
 }
 
 body {
-  background: rgba(65, 190, 179, 0.02);
+  background: linear-gradient(
+    105.05deg,
+    #010c10 10.85%,
+    #061d1b 67.36%,
+    #141311 128.79%
+  );
 }
 
 a {
@@ -49,4 +54,6 @@ a {
 .service-section {
   background: #ffffff;
 }
-
+.navbar-theme h1 {
+  color: #fff;
+}
