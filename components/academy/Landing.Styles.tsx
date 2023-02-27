@@ -12,7 +12,6 @@ export const LandingText = styled(Header)`
   font-size: 16px;
   line-height: 180%;
   color: #646464;
-  padding: 20px 0;
 `;
 export const LandingButtons = styled(Container)`
   justify-content: start;
@@ -44,6 +43,7 @@ export const LandingPhoto = styled.div`
   @media (max-width: 768px) {
     img {
       width: 90%;
+      height: 90%;
     }
   }
 `;
@@ -61,4 +61,39 @@ export const LandingTitle = styled(Title)`
   font-weight: 700;
   font-size: 30px;
   line-height: 34px;
+  padding: 0;
+  @media (max-width: 768px) {
+    font-size: 20px;
+  }
+`;
+
+export const LandingGrid = styled.div`
+  position: absolute;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 250px;
+  @media (max-width: 768px) {
+    gap: 20px;
+  }
+`;
+export const LandingCard = styled.div`
+  display: flex;
+  flex-direction: row;
+  width: 225.16px;
+  height: 90.84px;
+  background: #f5f5f4;
+  box-shadow: 0px 18.36px 38.25px rgba(0, 0, 0, 0.15);
+  border-radius: 18.36px;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  gap: 20px;
+  @media (max-width: 768px) {
+    width: 100%;
+    gap: 5px;
+    img {
+      width: 55%;
+      height: 55%;
+    }
+  }
 `;

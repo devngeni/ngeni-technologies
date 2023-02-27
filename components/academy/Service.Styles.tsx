@@ -9,6 +9,7 @@ export const ServiceContainer = styled(Container)`
     display: flex;
     flex-direction: column;
     gap: 10px;
+    padding: 20px 0;
   }
 `;
 export const ServiceTitle = styled.div`
@@ -20,6 +21,9 @@ export const ServiceTitle = styled.div`
   padding: 20px 0px;
   order: 1;
   align-self: stretch;
+  @media (max-width: 768px) {
+    font-size: 24px;
+  }
 `;
 export const ServiceHeader = styled(Header)`
   font-weight: 600;
@@ -32,6 +36,10 @@ export const ServiceTitle2 = styled.div`
   font-size: 24px;
   line-height: 150%;
   letter-spacing: 0.02em;
+  @media (max-width: 768px) {
+    font-size: 18px;
+    line-height: 100%;
+  }
 `;
 export const CardText = styled.div`
   font-weight: 400;
@@ -50,6 +58,9 @@ export const ServiceWrapper = styled.div`
   gap: 20px;
   display: flex;
   flex-direction: column;
+  @media (max-width: 768px) {
+    padding: 20px;
+  }
 `;
 export const TestimonialWrapper = styled.div`
   display: flex;

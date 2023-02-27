@@ -9,6 +9,9 @@ export const GridCenterItems = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  @media (max-width: 768px) {
+    padding: 20px 0;
+  }
 `;
 
 export const GridFlow = styled.div`

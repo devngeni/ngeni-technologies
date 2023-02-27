@@ -11,8 +11,12 @@ export const FooterGrid = styled(GridFlow)`
   justify-content: space-evenly;
   align-items: center;
   padding: 20px 0px;
+  width: 100%;
   @media (max-width: 768px) {
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-content: center;
   }
 `;
 export const FooterGridItem = styled(LeftGrid)`
@@ -20,6 +24,7 @@ export const FooterGridItem = styled(LeftGrid)`
   gap: 30px;
   @media (max-width: 768px) {
     flex: 0;
+    gap: 10px;
   }
 `;
 export const FooterHeader = styled(Header)`

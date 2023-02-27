@@ -1,9 +1,8 @@
 import styled from "styled-components";
 
 export const Title = styled.h1`
-  padding: 10px 16px;
   gap: 8px;
-  font-weight: 700;
+  font-weight: 900;
   font-size: 64px;
   line-height: 82px;
   letter-spacing: -0.5px;
@@ -14,5 +13,10 @@ export const Title = styled.h1`
   flex-grow: 0;
   span {
     color: #41bfb3;
+  }
+  @media (max-width: 768px) {
+    font-size: 46px;
+    line-height: 44px;
+    padding: 20px 0;
   }
 `;

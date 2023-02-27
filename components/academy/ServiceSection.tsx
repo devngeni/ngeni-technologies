@@ -28,15 +28,14 @@ import { GridCenterItems } from "../commons/LeftGrid";
 import { TeamSection } from "./Team";
 import Dev from "../../public/Dev.svg";
 import Pyro from "../../public/Pyro.svg";
+
 export default function ServiceSection() {
   return (
     <Wrapper className="service-section">
-      <Grid>
-        <LeftGrid>
-          <ServiceHeader>Our Services</ServiceHeader>
-          <ServiceTitle>Shaping Afrika’s Future Workforce</ServiceTitle>
-        </LeftGrid>
-      </Grid>
+      <ServiceWrapper>
+        <ServiceHeader>Our Services</ServiceHeader>
+        <ServiceTitle>Shaping Afrika’s Future Workforce</ServiceTitle>
+      </ServiceWrapper>
       <ServiceContainer>
         <Cards>
           <ServiceIcon>
@@ -141,7 +140,7 @@ export default function ServiceSection() {
       <ServiceWrapper>
         <ServiceHeader>Trainees</ServiceHeader>
         <ServiceTitle>Recent Developer Trainees</ServiceTitle>
-        <CardText style={{ fontSize: "20px" }}>
+        <CardText>
           Our Trainees go through an Intense and Dense program that make them
           the best in the global market.
         </CardText>

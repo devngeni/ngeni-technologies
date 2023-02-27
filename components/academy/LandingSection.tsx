@@ -12,7 +12,9 @@ import {
   LandingButton,
   LandingButton2,
   LandingButtons,
+  LandingCard,
   LandingContainer,
+  LandingGrid,
   LandingPhoto,
   LandingText,
   LandingTitle,
@@ -26,6 +28,9 @@ import Celo from "../../public/Celo.svg";
 import Eth from "../../public/Eth.svg";
 import Polygon from "../../public/Polygon.svg";
 import Harmony from "../../public/Harmony.svg";
+import Laptop from "../../public/Laptop.svg";
+import Corhort from "../../public/Cohort.svg";
+
 export default function LandingSection() {
   return (
     <Wrapper className="landing-page-left">
@@ -63,6 +68,22 @@ export default function LandingSection() {
         <RightGrid className="landing-page-right">
           <LandingPhoto>
             <Image src={Hero} width="710" height="510" alt="hero background" />
+            <LandingGrid>
+              <LandingCard>
+                <Image src={Laptop} width={48} height={48} alt="laptop icon" />
+                <RightGrid>
+                  <LandingTitle>2M+</LandingTitle>
+                  <LandingText>Github Commits</LandingText>
+                </RightGrid>
+              </LandingCard>
+              <LandingCard>
+                <Image src={Corhort} width={48} height={48} alt="laptop icon" />
+                <RightGrid>
+                  <LandingTitle>12+</LandingTitle>
+                  <LandingText>Cohorts</LandingText>
+                </RightGrid>
+              </LandingCard>
+            </LandingGrid>
           </LandingPhoto>
         </RightGrid>
       </Grid>
