@@ -15,7 +15,7 @@ import Twitter from "../../public/Twitter.svg";
 import LinkedIn from "../../public/LinkedIn.svg";
 import Github from "../../public/Github.svg";
 
-export default function Footer() {
+export default function FooterAcademy() {
   return (
     <FooterWrapper>
       <FooterGrid>

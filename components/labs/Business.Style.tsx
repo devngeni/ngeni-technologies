@@ -39,6 +39,14 @@ export const BusinessCard = styled.div`
     inset 0px 2.26765px 2.26765px rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(36.3611px);
   border-radius: 10px;
+  &:hover {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: inset 0px 0px 34.0148px rgba(255, 255, 255, 0.05),
+      inset 0px 2.26765px 2.26765px rgba(255, 255, 255, 0.15),
+      0px 0px 34.0148px rgba(255, 255, 255, 0.05),
+      0px 2.26765px 2.26765px rgba(255, 255, 255, 0.15);
+    transition: 0.5s ease-in-out;
+  }
 `;
 
 export const BusinessCardTitle = styled.h1`
@@ -129,6 +137,13 @@ export const ProjectCardTitle = styled.div`
   font-size: 32.9748px;
   line-height: 156.02%;
   color: #000000;
+  cursor: pointer;
+  span {
+    &:hover {
+      color: #3ebeb8;
+      transition: 0.5s ease-in-out;
+    }
+  }
 `;
 export const CompleteTitle = styled.h1`
   font-weight: 900;

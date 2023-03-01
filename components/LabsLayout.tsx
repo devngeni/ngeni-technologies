@@ -1,5 +1,6 @@
 import Head from "next/head";
 import { ThemeProvider } from "styled-components";
+import { FooterLabs } from "./footer";
 import Navbar from "./Navbar";
 
 interface LayoutProps {
@@ -17,6 +18,7 @@ export default function LabsLayout({ children }: LayoutProps) {
       </Head>
       <Navbar />
       <main>{children}</main>
+      <FooterLabs />
     </>
   );
 }

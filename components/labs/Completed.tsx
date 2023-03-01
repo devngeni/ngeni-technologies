@@ -30,7 +30,8 @@ export default function CompletedSection() {
         </CompleteCard>
         <CompleteText>
           <ProjectCardTitle>
-            Potara | Once App | Boom <br />| Gema | Edge
+            <span>Potara</span> | <span>Once App</span> | <span>Boom</span>
+            <br />| <span>Gema</span> | <span>Edge</span>
           </ProjectCardTitle>
           <ProjectCardTitle style={{ textAlign: "start", color: "#464646" }}>
             Partnering with

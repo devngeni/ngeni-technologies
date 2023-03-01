@@ -20,7 +20,7 @@ export default function BusinessSection() {
       <BusinessGrid>
         <BussinessLeft>
           <BusinessTitle>
-            <span>Business</span> Units
+            <span>Business</span>&nbsp;Units
           </BusinessTitle>
         </BussinessLeft>
       </BusinessGrid>

@@ -4,8 +4,10 @@ import {
   CompletedSection,
   LabsHomeSection,
   ProjectsSection,
+  SubscribeSection,
   TimelineSection,
   ToolsSection,
+  TrustSection,
   WhyNgeniSection,
 } from "@/components/labs";
 import { ThemeProvider } from "styled-components";
@@ -40,6 +42,8 @@ export default function LabsHomePage() {
         <ProjectsSection />
         <CompletedSection />
         <WhyNgeniSection />
+        <SubscribeSection />
+        <TrustSection />
       </LabsLayout>
     </ThemeProvider>
   );

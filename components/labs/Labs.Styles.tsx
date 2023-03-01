@@ -60,8 +60,10 @@ export const Button = styled.button`
   color: #ffffff;
   background: transparent;
   cursor: pointer;
+  border-radius: 5px;
   &:hover {
     border: 1px solid #3ebeb8;
     color: #3ebeb8;
+    transition: 0.5s ease-in-out;
   }
 `;
