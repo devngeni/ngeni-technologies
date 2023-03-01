@@ -1,5 +1,5 @@
 import { LabsLayout } from "@/components";
-import { LabsHomeSection, TimelineSection } from "@/components/labs";
+import { LabsHomeSection, TimelineSection, ToolsSection } from "@/components/labs";
 import { ThemeProvider } from "styled-components";
 
 export default function LabsHomePage() {
@@ -27,6 +27,7 @@ export default function LabsHomePage() {
       <LabsLayout>
         <LabsHomeSection />
         <TimelineSection />
+        <ToolsSection />
       </LabsLayout>
     </ThemeProvider>
   );
