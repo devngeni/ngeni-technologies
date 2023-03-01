@@ -28,7 +28,7 @@ export const LabsGrid = styled(Grid)`
   grid-template-columns: 1fr 1fr;
   align-content: center;
   justify-content: center;
-  padding: 155px 0 0 0;
+  height: 100vh;
 `;
 export const LabLeftGrid = styled.div`
   display: flex;
