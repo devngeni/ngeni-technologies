@@ -49,8 +49,8 @@ export default function ToolsSection() {
         Some&nbsp;<span>Technologies</span>&nbsp;We Use
       </ToolsTitle>
       <ToolsGrid>
-        {toolsData.map((tool) => (
-          <ToolsCard>
+        {toolsData.map((tool, index) => (
+          <ToolsCard key={index}>
             <Image src={tool.image} alt="Tool" />
           </ToolsCard>
         ))}
