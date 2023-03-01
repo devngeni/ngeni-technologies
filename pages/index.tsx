@@ -6,6 +6,7 @@ import {
   ProjectsSection,
   TimelineSection,
   ToolsSection,
+  WhyNgeniSection,
 } from "@/components/labs";
 import { ThemeProvider } from "styled-components";
 
@@ -38,6 +39,7 @@ export default function LabsHomePage() {
         <BusinessSection />
         <ProjectsSection />
         <CompletedSection />
+        <WhyNgeniSection />
       </LabsLayout>
     </ThemeProvider>
   );

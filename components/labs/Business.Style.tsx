@@ -17,6 +17,7 @@ export const BusinessGrid = styled.div`
   grid-template-columns: repeat(2, 1fr);
   gap: 50px;
 `;
+
 export const BussinessLeft = styled.div`
   display: flex;
   flex-direction: column;
@@ -137,8 +138,8 @@ export const CompleteTitle = styled.h1`
   color: #253435;
 `;
 export const CompleteText = styled(BusinessGrid)`
-display: flex;
-justify-content: center;
+  display: flex;
+  justify-content: center;
 `;
 export const CompleteCard = styled.div`
   display: flex;
@@ -146,4 +147,44 @@ export const CompleteCard = styled.div`
   justify-content: space-between;
   align-items: center;
   height: inherit;
+`;
+
+export const WhyTitle = styled.div`
+  font-weight: 500;
+  font-size: 74.1857px;
+  line-height: 92px;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+`;
+export const WhyGrid = styled.div`
+  background: url("/World.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  padding: 50px 0;
+  gap: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
+export const WhyCard = styled.div`
+  background: url("/City.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+`;
+export const WhyText = styled.div`
+  font-weight: 500;
+  font-size: 16.2571px;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  color: #a1a1a1;
+`;
+export const WhyContainer = styled.div`
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+  width: 100%;
 `;
