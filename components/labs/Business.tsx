@@ -3,7 +3,6 @@ import {
   BusinessCard,
   BusinessCardText,
   BusinessCardTitle,
-  BusinessContainer,
   BusinessGrid,
   BusinessTitle,
   BusinessWrapper,
@@ -14,7 +13,6 @@ import Hill from "../../public/Hill.svg";
 import Nstar from "../../public/Nstar.svg";
 import ALogo from "../../public/ALogo.svg";
 import Design from "../../public/Design.svg";
-import { ToolsWrapper } from "./Tools.Style";
 
 export default function BusinessSection() {
   return (

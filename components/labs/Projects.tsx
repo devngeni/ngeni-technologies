@@ -1,11 +1,8 @@
 import {
   BusinessContainer,
-  BusinessGrid,
   ProjectCard,
-  ProjectCardTitle,
   ProjectContainer,
   ProjectGrid,
-  ProjectLeft,
   ProjectText,
   ProjectTitle,
   ProjectWrapper,

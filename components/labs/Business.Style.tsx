@@ -109,11 +109,41 @@ export const ProjectContainer = styled.div`
 `;
 export const ProjectLeft = styled.div`
   background: #d9d9d9;
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 `;
-export const ProjectRight = styled.div``;
-export const ProjectCardTitle = styled.h1`
-font-weight: 500;
-font-size: 32.9748px;
-line-height: 116.02%;
-color: #000000;
+export const ProjectRight = styled.div`
+  background-image: url("/Boom.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+  background-size: cover;
+  width: 100%;
+  height: 935px;
+`;
+export const ProjectCardTitle = styled.div`
+  font-weight: 500;
+  font-size: 32.9748px;
+  line-height: 156.02%;
+  color: #000000;
+`;
+export const CompleteTitle = styled.h1`
+  font-weight: 900;
+  font-size: 96px;
+  line-height: 115.02%;
+  text-transform: capitalize;
+  color: #253435;
+`;
+export const CompleteText = styled(BusinessGrid)`
+display: flex;
+justify-content: center;
+`;
+export const CompleteCard = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: inherit;
 `;
