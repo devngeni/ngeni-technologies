@@ -2,19 +2,29 @@ import styled from "styled-components";
 import { Grid, Title } from "../commons";
 
 export const TimelineWrapper = styled.div``;
-export const TimelineGrid = styled(Grid)`
+export const TimelineGrid = styled.div`
+  display: grid;
   grid-template-columns: 2fr 1fr;
   justify-content: center;
   align-content: center;
-  height: 100vh;
   gap: 0;
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
 `;
 export const TimeLineTitle = styled(Title)`
   font-size: 96px;
   font-weight: 900;
   line-height: 120px;
+  @media (max-width: 768px) {
+    font-size: 48px;
+    line-height: 60px;
+  }
 `;
-export const TimelineLeftGrid = styled(Grid)`
+export const TimelineLeftGrid = styled.div`
   grid-template-columns: 1fr 2fr;
   background: ${({ theme }) => theme.colors.section};
   gap: 20px;
@@ -43,6 +53,9 @@ export const TimelineText = styled.div`
   align-item: center;
   justify-content: center;
   transform: rotate(-90deg);
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 export const TimeContainer = styled.div`
   display: flex;
@@ -51,14 +64,18 @@ export const TimeContainer = styled.div`
   align-content: center;
 `;
 export const TimeLineCircle = styled.div`
-background: ${({ theme }) => theme.colors.main};
-padding: 20px 0;
+  background: ${({ theme }) => theme.colors.main};
+  padding: 20px 0;
 `;
 
 export const TimelineP = styled.div`
   font-weight: 500;
   font-size: 48px;
   line-height: 20px;
+  @media (max-width: 768px) {
+    font-size: 24px;
+    line-height: 20px;
+  }
 `;
 export const RightHeader = styled.div`
   font-weight: 700;

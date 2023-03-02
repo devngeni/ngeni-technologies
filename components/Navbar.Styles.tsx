@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { Grid, Header } from "./commons";
 
-export const NavbarText = styled.h1`
+export const NavbarText = styled.div`
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
@@ -32,4 +32,28 @@ export const NavbarGrid = styled(Grid)`
 grid-template-columns: 1fr 2fr;
 padding: 20px 0;
 align-content: center;
+`
+export const AiNavText = styled.div`
+font-weight: 800;
+font-size: 20px;
+color: #fff;
+`
+
+export const AiText = styled(NavbarText)`
+color: #fff;
+`
+
+export const AiNavWrapper = styled.div`
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+`;
+
+export const AiContainer = styled.div`
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+gap: 20px;
 `

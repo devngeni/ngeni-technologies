@@ -28,8 +28,8 @@ export default function LabsHomePage() {
       body: "16px",
       heading: "24px",
       title: "76px",
-      header: "16",
-      paragraph: "16",
+      header: "16px",
+      mobileTitle: "36px",
     },
   };
   return (
