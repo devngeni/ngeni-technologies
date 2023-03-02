@@ -30,19 +30,9 @@ export const AiTitle = styled.h1`
   align-items: center;
   text-align: center;
   justify-content: center;
-  animation: glow 2s ease-in-out infinite;
-  @keyframes glow {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
-  }
-  @media (max-width: 768px) {
+  animation: glow 2s ease-in-out infinite alternate;
+
+   @media (max-width: 768px) {
     font-size: ${({ theme }) => theme.fontSizes.mobileTitle};
     line-height: 50px;
   }
