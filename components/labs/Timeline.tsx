@@ -6,6 +6,7 @@ import {
   TimeContainer,
   TimeGrid,
   TimeImage,
+  TimeImageWrapper,
   Timeline,
   TimeLineCircle,
   TimelineGrid,
@@ -28,7 +29,7 @@ export default function TimelineSection() {
           <TimeContainer>
             <TimelineText>Development Timeline</TimelineText>
             <TimeImage>
-              <Image src={Curve} width={161} height={161} alt="curve-text" />
+              <Image src={Curve}  alt="curve-text" />
             </TimeImage>
           </TimeContainer>
           <TimeLineRightHeader>
@@ -46,9 +47,9 @@ export default function TimelineSection() {
               <Timeline>
                 <Text>1</Text>
               </Timeline>
-              <TimeImage>
+              <TimeImageWrapper>
                 <Image src={Vector} width={100} height={100} alt="lines" />
-              </TimeImage>
+              </TimeImageWrapper>
             </TimelineRightGrid>
             <TimelineRightGrid>
               <RightHeader>Ideation & Evaluation</RightHeader>
@@ -64,9 +65,9 @@ export default function TimelineSection() {
               <Timeline>
                 <Text>2</Text>
               </Timeline>
-              <TimeImage>
-                <Image src={Vector} width={100} height={100} alt="lines" />
-              </TimeImage>
+              <TimeImageWrapper>
+                <Image src={Vector}  alt="lines" />
+              </TimeImageWrapper>
             </TimelineRightGrid>
             <TimelineRightGrid>
               <RightHeader>Ideation & Evaluation</RightHeader>
@@ -82,9 +83,9 @@ export default function TimelineSection() {
               <Timeline>
                 <Text>3</Text>
               </Timeline>
-              <TimeImage>
-                <Image src={Vector} width={100} height={100} alt="lines" />
-              </TimeImage>
+              <TimeImageWrapper>
+                <Image src={Vector}  alt="lines" />
+              </TimeImageWrapper>
             </TimelineRightGrid>
             <TimelineRightGrid>
               <RightHeader>Ideation & Evaluation</RightHeader>

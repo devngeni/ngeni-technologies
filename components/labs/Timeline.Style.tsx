@@ -3,11 +3,9 @@ import { Grid, Title } from "../commons";
 
 export const TimelineWrapper = styled.div``;
 export const TimelineGrid = styled.div`
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  justify-content: center;
+  display: flex;
+  justify-content: space-around;
   align-content: center;
-  gap: 0;
   @media (max-width: 768px) {
     display: flex;
     flex-direction: column;
@@ -20,12 +18,13 @@ export const TimeLineTitle = styled(Title)`
   font-weight: 900;
   line-height: 120px;
   @media (max-width: 768px) {
-    font-size: 48px;
-    line-height: 60px;
+    font-size: 34px;
+    line-height: 50px;
   }
 `;
 export const TimelineLeftGrid = styled.div`
-  grid-template-columns: 1fr 2fr;
+  display: flex;
+  flex-direction: row;
   background: ${({ theme }) => theme.colors.section};
   gap: 20px;
   padding: 50px 0;
@@ -36,6 +35,21 @@ export const TimeImage = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  img {
+    width: 90%;
+    height: 90%;
+  }
+`;
+export const TimeImageWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media (max-width: 768px) {
+  img {
+    width: 5%;
+    height: 5%;
+  }
+}
 `;
 export const TimeLineRightHeader = styled.div`
   display: flex;
@@ -48,24 +62,31 @@ export const TimelineText = styled.div`
   line-height: 20px;
   text-transform: uppercase;
   color: #010a0f;
-  height: 100px;
-  display: flex;
-  align-item: center;
-  justify-content: center;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
   transform: rotate(-90deg);
   @media (max-width: 768px) {
-    display: none;
+    display: flex;
+    font-size: 16px;
+    align-items: center;
   }
 `;
 export const TimeContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-content: center;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 `;
 export const TimeLineCircle = styled.div`
   background: ${({ theme }) => theme.colors.main};
   padding: 20px 0;
+  @media (max-width: 768px) {
+    height: 100vh;
+    overflow: scroll;
+    scroll-behavior: smooth;
+    transition: 0.5s ease-in-out;
+  }
 `;
 
 export const TimelineP = styled.div`
@@ -84,12 +105,20 @@ export const RightHeader = styled.div`
   color: #a7cefc;
 `;
 export const RightP = styled(RightHeader)`
-  font-size: 16px;
+  inline-size: 450px;
+  overflow-wrap: break-word;
+  color: #ffffff;
+  @media (max-width: 768px) {
+    font-size: 16px;
+    line-height: 20px;
+    inline-size: 100%;
+    font-weight: 500;
+  }
 `;
 export const Timeline = styled.div`
   background: url("/Number.svg") no-repeat;
   background-size: contain;
-  background-position: top;
+  background-position: center;
   height: 140px;
   display: flex;
   justify-content: center;
@@ -104,12 +133,13 @@ export const Timeline = styled.div`
       transform: rotate(360deg);
     }
   }
+  @media (max-width: 768px) {
+    height: 80px;
+  }
 `;
 export const Text = styled.div`
   font-weight: 700;
   font-size: 24px;
-  position: absolute;
-  z-index: 1;
 `;
 export const TimeGrid = styled.div`
   display: grid;
