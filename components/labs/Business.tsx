@@ -13,8 +13,10 @@ import Hill from "../../public/Hill.svg";
 import Nstar from "../../public/Nstar.svg";
 import ALogo from "../../public/ALogo.svg";
 import Design from "../../public/Design.svg";
+import { useRouter } from "next/router";
 
 export default function BusinessSection() {
+  const router = useRouter();
   return (
     <BusinessWrapper>
       <BusinessGrid>
@@ -28,7 +30,9 @@ export default function BusinessSection() {
         <BussinessLeft>
           <BusinessCard>
             <Image src={Hill} width={128} height={128} alt="Business" />
-            <BusinessCardTitle>Academy</BusinessCardTitle>
+            <BusinessCardTitle onClick={() => router.push("/academy")}>
+              Academy
+            </BusinessCardTitle>
             <BusinessCardText>
               Aliquet id sed augue consequat gravida tortor. Tristique at et
               arcu vulputate. Habitasse tempor porta.
@@ -38,7 +42,9 @@ export default function BusinessSection() {
         <BussinessRight>
           <BusinessCard>
             <Image src={Nstar} width={128} height={128} alt="Business" />
-            <BusinessCardTitle>Engineering</BusinessCardTitle>
+            <BusinessCardTitle onClick={() => router.push("/")}>
+              Engineering
+            </BusinessCardTitle>
             <BusinessCardText>
               Aliquet id sed augue consequat gravida tortor. Tristique at et
               arcu vulputate. Habitasse tempor porta.
@@ -61,7 +67,9 @@ export default function BusinessSection() {
         <BussinessRight>
           <BusinessCard>
             <Image src={ALogo} width={128} height={128} alt="Business" />
-            <BusinessCardTitle>AI</BusinessCardTitle>
+            <BusinessCardTitle onClick={() => router.push("/ai")}>
+              AI
+            </BusinessCardTitle>
             <BusinessCardText>
               Aliquet id sed augue consequat gravida tortor. Tristique at et
               arcu vulputate. Habitasse tempor porta.

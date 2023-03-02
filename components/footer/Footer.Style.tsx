@@ -5,7 +5,7 @@ import { GridFlow, LeftGrid } from "../commons/LeftGrid";
 export const FooterWrapper = styled.footer`
   background-color: #000000;
   color: #ffffff;
-  padding: 36px 0px;
+  padding: 36px 20px;
 `;
 export const FooterGrid = styled(GridFlow)`
   justify-content: space-evenly;
