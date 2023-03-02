@@ -1,3 +1,4 @@
+import Image from "next/image";
 import {
   Button,
   LabLeftGrid,
@@ -7,6 +8,7 @@ import {
   LabsWrapper,
   LabText,
 } from "./Labs.Styles";
+import Hero from "../../public/Heroimg.svg";
 
 export default function LabsHomeSection() {
   return (
@@ -14,7 +16,8 @@ export default function LabsHomeSection() {
       <LabsGrid>
         <LabLeftGrid>
           <LabsTitle>
-            We Create Disruptive <span>Blockchain</span> Products
+            We Create Disruptive
+            <br /> <span>Blockchain</span> Products
           </LabsTitle>
           <LabText>
             Ours is a profound commitment to Quality
@@ -22,7 +25,10 @@ export default function LabsHomeSection() {
           </LabText>
           <Button>SEE OUR CATALOGUE &gt;</Button>
         </LabLeftGrid>
-        <LabRightGrid />
+        <LabRightGrid>
+        </LabRightGrid>
+        <LabRightGrid>
+        </LabRightGrid>
       </LabsGrid>
     </LabsWrapper>
   );

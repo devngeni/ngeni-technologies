@@ -9,51 +9,51 @@ export const NavbarText = styled.div`
   order: 2;
   flex-grow: 0;
   cursor: pointer;
-  color: #101828;
+  color: #fff;
   &:hover {
     color: #41bfb3;
   }
 `;
 
 export const NavbarWrapper = styled.div`
-width: 100%;
-padding: 20px auto;
-align-items: center;
-display: content;
-background-color: ${({ theme }) => theme.colors.background};
+  width: 100%;
+  padding: 36px auto;
+  align-items: center;
+  display: content;
+  background-color: ${({ theme }) => theme.colors.background};
 `;
 
 export const NavbarHeader = styled(Header)`
-align-items: center;
-display: flex;
-justify-content: center;
-`
+  align-items: center;
+  display: flex;
+  justify-content: center;
+`;
 export const NavbarGrid = styled(Grid)`
-grid-template-columns: 1fr 2fr;
-padding: 20px 0;
-align-content: center;
-`
+  grid-template-columns: 1fr 2fr;
+  padding: 20px 0;
+  align-content: center;
+`;
 export const AiNavText = styled.div`
-font-weight: 800;
-font-size: 20px;
-color: #fff;
-`
+  font-weight: 800;
+  font-size: 20px;
+  color: #fff;
+`;
 
 export const AiText = styled(NavbarText)`
-color: #fff;
-`
+  color: #fff;
+`;
 
 export const AiNavWrapper = styled.div`
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 `;
 
 export const AiContainer = styled.div`
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-gap: 20px;
-`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+`;

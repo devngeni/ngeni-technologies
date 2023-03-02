@@ -1,3 +1,4 @@
+import { useRouter } from "next/router";
 import {
   AiBody,
   AiButton,
@@ -10,6 +11,7 @@ import {
 } from "./AI.Styles";
 
 export default function AIHomeSection() {
+  const router = useRouter();
   return (
     <AiWrapper className="ai-bg">
       <AiBody>
@@ -22,7 +24,9 @@ export default function AIHomeSection() {
         </AiText>
         <AiGrid>
           <AiButton>Learn More</AiButton>
-          <AiRightButton>Projects</AiRightButton>
+          <AiRightButton onClick={() => router.push("/chatgpt")}>
+            Projects
+          </AiRightButton>
         </AiGrid>
       </AiBody>
     </AiWrapper>

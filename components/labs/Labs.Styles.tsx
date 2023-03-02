@@ -1,16 +1,40 @@
 import styled from "styled-components";
 
 export const LabsWrapper = styled.div`
-  min-height: 100%;
+background: url("/Heroimg.svg") no-repeat;
+background-position: right;
+background-size: contain;
 `;
 
+export const LabLeftGrid = styled.div`
+display: flex;
+padding: 200px 0;
+flex-direction: column;
+gap: 73px;
+@media (max-width: 768px) {
+  align-items: center;
+    justify-content: center;
+}
+`;
+
+export const LabsGrid = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+  }
+`;
 export const LabsTitle = styled.h1`
   font-weight: 700;
   font-size: ${({ theme }) => theme.fontSizes.title};
   line-height: 92px;
   color: #ffffff;
-  display: grid;
-  justify-content: center;
   span {
     color: #3ebeb8;
   }
@@ -19,33 +43,7 @@ export const LabsTitle = styled.h1`
     line-height: 50px;
   }
 `;
-export const LabsGrid = styled.div`
-  display: grid;
-  width: 100%;
-  grid-template-columns: 1fr 1fr;
-  align-content: center;
-  justify-content: center;
-  height: 100vh;
-  @media (max-width: 768px) {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    align-self: center;
-    gap: 50px;
-  }
-`;
-export const LabLeftGrid = styled.div`
-  width: 100%;
-  align-content: center;
-  justify-content: center;
-  height: inherit;
-`;
 export const LabRightGrid = styled.div`
-  width: 100%;
-  background: url("/Heroimg.svg");
-  background-repeat: no-repeat;
-  background-position: center;
 `;
 export const LabText = styled.div`
   font-size: 15.2571px;

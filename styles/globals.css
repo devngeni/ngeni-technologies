@@ -78,12 +78,24 @@ a {
 @keyframes glow {
   0% {
     background: linear-gradient(269.94deg, #4575df -7.83%, #3ebeb8 103.13%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
   }
   50% {
     background: linear-gradient(269.94deg, #3ebeb8 -7.83%, #4575df 103.13%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
   }
   100% {
     background: linear-gradient(269.94deg, #4575df -7.83%, #3ebeb8 103.13%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
   }
 }
 

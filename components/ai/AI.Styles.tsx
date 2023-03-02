@@ -31,8 +31,8 @@ export const AiTitle = styled.h1`
   text-align: center;
   justify-content: center;
   animation: glow 2s ease-in-out infinite alternate;
-
-   @media (max-width: 768px) {
+  animation-delay: 3s;
+  @media (max-width: 768px) {
     font-size: ${({ theme }) => theme.fontSizes.mobileTitle};
     line-height: 50px;
   }
@@ -116,4 +116,21 @@ export const AiRightButton = styled.button`
     width: 100px;
     height: 100%;
   }
+`;
+
+export const AiChatCard = styled.div`
+  background: #11191f;
+  border-radius: 15px;
+  width: 60%;
+  height: 300px;
+`;
+export const AiChart = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  height: inherit;
+  color: #fff;
 `;
