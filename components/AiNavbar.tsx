@@ -6,8 +6,7 @@ import {
   AiNavWrapper,
   AiText,
   NavbarGrid,
-  NavbarHeader,
-  NavbarText,
+
   NavbarWrapper,
 } from "./Navbar.Styles";
 import AiBg from "../public/AiBg.svg";
