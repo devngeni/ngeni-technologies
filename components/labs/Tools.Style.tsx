@@ -21,10 +21,15 @@ export const ToolsTitle = styled.h1`
   span {
     color: #41bfb3;
   }
+  @media (max-width: 768px) {
+    font-size: 34px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 `;
 export const ToolsGrid = styled.div`
   background: url("/Wire.svg");
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-size: cover;
   background-position: center;
   display: flex;
@@ -33,7 +38,15 @@ export const ToolsGrid = styled.div`
   align-items: center;
   flex-wrap: wrap;
   gap: 50px;
+  @media (max-width: 768px) {
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    transition: 0.5s ease-in-out;
+  }
 `;
+
 export const ToolsCard = styled.div`
   background: #11191f;
   border-radius: 15px;
@@ -43,5 +56,6 @@ export const ToolsCard = styled.div`
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  white-space: nowrap;
 `;
 export const ToolsCardIcon = styled.div``;
