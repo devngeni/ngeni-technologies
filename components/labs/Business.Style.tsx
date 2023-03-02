@@ -16,6 +16,10 @@ export const BusinessGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 50px;
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+  }
 `;
 
 export const BussinessLeft = styled.div`
@@ -46,6 +50,10 @@ export const BusinessCard = styled.div`
       0px 0px 34.0148px rgba(255, 255, 255, 0.05),
       0px 2.26765px 2.26765px rgba(255, 255, 255, 0.15);
     transition: 0.5s ease-in-out;
+  }
+  @media (max-width: 768px) {
+    width: 100%;
+    height: 100%;
   }
 `;
 
@@ -78,6 +86,9 @@ export const ProjectCard = styled.div`
   border-radius: 16px;
   width: 863.28px;
   height: 155.61px;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 export const ProjectTitle = styled.h1`
   font-weight: 700;
@@ -88,6 +99,9 @@ export const ProjectTitle = styled.h1`
   text-align: center;
   font-feature-settings: "pnum" on, "lnum" on;
   color: #3ebeb8;
+  @media (max-width: 768px) {
+    font-size: 24px;
+  }
 `;
 export const ProjectText = styled.p`
   font-weight: 700;
@@ -99,6 +113,9 @@ export const ProjectText = styled.p`
   text-transform: uppercase;
   font-feature-settings: "pnum" on, "lnum" on;
   color: #ebebeb;
+  @media (max-width: 768px) {
+    font-size: 12px;
+  }
 `;
 export const ProjectGrid = styled.div`
   display: flex;
@@ -106,6 +123,12 @@ export const ProjectGrid = styled.div`
   justify-content: space-evenly;
   align-items: center;
   height: inherit;
+  @media (max-width: 768px) {
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-around;
+    padding: 0 20px;
+  }
 `;
 
 export const ProjectContainer = styled.div`
@@ -122,6 +145,9 @@ export const ProjectLeft = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  @media (max-width: 768px) {
+    padding: 0 20px;  
+  }
 `;
 export const ProjectRight = styled.div`
   background-image: url("/Boom.svg");
@@ -144,6 +170,10 @@ export const ProjectCardTitle = styled.div`
       transition: 0.5s ease-in-out;
     }
   }
+  @media (max-width: 768px) {
+    font-size: 24px;
+    padding: 20px 0;
+  }
 `;
 export const CompleteTitle = styled.h1`
   font-weight: 900;
@@ -151,6 +181,10 @@ export const CompleteTitle = styled.h1`
   line-height: 115.02%;
   text-transform: capitalize;
   color: #253435;
+  @media (max-width: 768px) {
+    line-height: 80.02%;
+    transition: 0.5s ease-in-out;
+  }
 `;
 export const CompleteText = styled(BusinessGrid)`
   display: flex;
@@ -171,6 +205,10 @@ export const WhyTitle = styled.div`
   display: flex;
   align-items: center;
   color: #ffffff;
+  @media (max-width: 768px) {
+    font-size: 48px;
+    line-height: 59px;
+  }
 `;
 export const WhyGrid = styled.div`
   background: url("/World.svg");
@@ -183,6 +221,8 @@ export const WhyGrid = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  @media (max-width: 768px) {
+  }
 `;
 export const WhyCard = styled.div`
   background: url("/City.svg");
@@ -202,4 +242,9 @@ export const WhyContainer = styled.div`
   grid-template-columns: repeat(2, 1fr);
   gap: 50px;
   width: 100%;
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+  }
 `;

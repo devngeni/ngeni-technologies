@@ -9,11 +9,18 @@ export const SubscribeContainer = styled.div`
   justify-content: space-around;
   align-items: center;
   align-content: center;
+  @media (max-width: 768px) {
+    padding: 50px 20px;
+  }
 `;
 export const SubscribeGrid = styled.div`
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 50px;
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+  }
 `;
 export const SubscribeTitle = styled.h2`
   font-weight: 500;
@@ -29,6 +36,10 @@ export const SubscribeText = styled.div`
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 20px;
+  }
 `;
 export const Button = styled.button`
   width: 228.42px;
@@ -61,5 +72,8 @@ export const Input = styled.input`
   &:focus {
     outline: #41bfb3;
     border: 1px solid #fff;
+  }
+  @media (max-width: 768px) {
+    width: 100%;
   }
 `;

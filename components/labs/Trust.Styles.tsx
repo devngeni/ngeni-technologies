@@ -33,6 +33,11 @@ export const TrustBody = styled.div`
   align-content: center;
   gap: 50px;
   overflow: hidden;
+    @media (max-width: 768px) {
+        overflow: scroll;
+        width: 100%;
+        scrollbar-color: #3ebeb8 #cacaca;   
+    }
 `;
 export const TrustCard = styled.div``;
 export const TrustImage = styled.img``;
