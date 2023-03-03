@@ -27,10 +27,10 @@ export default function BusinessSection() {
         </BussinessLeft>
       </BusinessGrid>
       <BusinessGrid>
-        <BussinessLeft>
+        <BussinessLeft onClick={() => router.push("/academy")}>
           <BusinessCard>
             <Image src={Hill} width={128} height={128} alt="Business" />
-            <BusinessCardTitle onClick={() => router.push("/academy")}>
+            <BusinessCardTitle>
               Academy
             </BusinessCardTitle>
             <BusinessCardText>
@@ -54,7 +54,7 @@ export default function BusinessSection() {
       </BusinessGrid>
 
       <BusinessGrid>
-        <BussinessLeft>
+        <BussinessLeft onClick={() => router.push('/design')}>
           <BusinessCard>
             <Image src={Design} width={128} height={128} alt="Business" />
             <BusinessCardTitle>Design</BusinessCardTitle>
@@ -65,9 +65,9 @@ export default function BusinessSection() {
           </BusinessCard>
         </BussinessLeft>
         <BussinessRight>
-          <BusinessCard>
+          <BusinessCard onClick={() => router.push("/ai")}>
             <Image src={ALogo} width={128} height={128} alt="Business" />
-            <BusinessCardTitle onClick={() => router.push("/ai")}>
+            <BusinessCardTitle>
               AI
             </BusinessCardTitle>
             <BusinessCardText>

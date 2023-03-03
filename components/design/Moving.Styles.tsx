@@ -3,6 +3,9 @@ import styled from "styled-components";
 export const MovingWrapper = styled.div`
   background: ${(props) => props.theme.colors.background};
   height: 70vh;
+  @media (max-width: 768px) {
+    height: 100%;
+  }
 `;
 export const MovingContainer = styled.div`
   background: url("/Wavy.svg");
@@ -15,6 +18,9 @@ export const MovingContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 50px;
+  @media (max-width: 768px) {
+    padding-bottom: 20px;
+  }
 `;
 export const MovingScroll = styled.div``;
 export const MovingHeader = styled.div`
@@ -29,7 +35,10 @@ export const MovingHeader = styled.div`
   line-height: 120px;
   color: #ffffff;
   animation: moveTextlong 20s linear infinite;
- 
+  @media (max-width: 768px) {
+    font-size: 62px;
+    line-height: 80px;
+  }
 `;
 export const MovingTitle = styled.div`
   width: max-content;
@@ -47,4 +56,8 @@ export const MovingTitle = styled.div`
   -webkit-text-stroke-color: #ffffff;
   transform: translateY(50%);
   animation: moveText 20s linear infinite;
+  @media (max-width: 768px) {
+    font-size: 62px;
+    line-height: 80px;
+  }
 `;

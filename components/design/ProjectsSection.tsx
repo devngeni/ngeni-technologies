@@ -17,7 +17,7 @@ export default function ProjectSection() {
   return (
     <ProjectWrapper>
       <DesignContainer style={{ background: "#000" }}>
-        <ProjectTitle style={{ padding: "50px 0" }}>Projects</ProjectTitle>
+        <ProjectTitle>Projects</ProjectTitle>
       </DesignContainer>
       <ProjectContainer>
         <PhotoImage>

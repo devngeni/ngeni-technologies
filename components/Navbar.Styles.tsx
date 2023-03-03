@@ -68,6 +68,9 @@ export const DesignContainer = styled.div`
   justify-items: center;
   align-items: center;
   padding: 50px 250px 0 250px;
+  @media (max-width: 768px) {
+    padding: 20px;
+  }
 `;
 export const NavbarLogo = styled.div``;
 export const DesignNavText = styled.div``;
