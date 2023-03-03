@@ -1,6 +1,5 @@
 import Image from "next/image";
 import {
-  Button,
   Container,
   Grid,
   LeftGrid,

@@ -6,3 +6,4 @@ export { default as LabsLayout } from "./LabsLayout";
 export {default as AILayout} from './AILayout'
 export {default as AiNavbar} from './AiNavbar'
 export {default as Chat} from './ai/Chat'
+export {default as DesignLayout} from './DesignLayout'

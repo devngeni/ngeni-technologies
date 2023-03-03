@@ -1,9 +1,5 @@
 import {
   Cards,
-  Container,
-  Grid,
-  LeftGrid,
-  RightGrid,
   Wrapper,
 } from "../commons";
 import {
@@ -34,7 +30,7 @@ export default function ServiceSection() {
     <Wrapper className="service-section">
       <ServiceWrapper>
         <ServiceHeader>Our Services</ServiceHeader>
-        <ServiceTitle>Shaping Afrika’s Future Workforce</ServiceTitle>
+        <ServiceTitle>Shaping Afrika&apos;s Future Workforce</ServiceTitle>
       </ServiceWrapper>
       <ServiceContainer>
         <Cards>
@@ -76,7 +72,7 @@ export default function ServiceSection() {
         <ServiceHeader>Explore Programs</ServiceHeader>
         <ServiceTitle>Programs</ServiceTitle>
         <CardText style={{ fontSize: "20px" }}>
-          Let's join our famous class, the knowledge provided will definitely be
+          Let&apos;s join our famous class, the knowledge provided will definitely be
           useful for you.
         </CardText>
       </ServiceWrapper>

@@ -1,0 +1,48 @@
+import {
+  DesignContainer,
+  PhotoImage,
+  ProjectContainer,
+  ProjectGrid,
+  ProjectHeader,
+  ProjectText,
+  ProjectTitle,
+  ProjectWrapper,
+} from "./Design.Style";
+import Media from "../../public/Media.svg";
+import Image from "next/image";
+import Wdw3 from "../../public/wdw3.svg";
+import Dashboard from "../../public/dashboard.svg";
+import LinkPay from "../../public/linkpay.svg";
+export default function ProjectSection() {
+  return (
+    <ProjectWrapper>
+      <DesignContainer style={{ background: "#000" }}>
+        <ProjectTitle style={{ padding: "50px 0" }}>Projects</ProjectTitle>
+      </DesignContainer>
+      <ProjectContainer>
+        <PhotoImage>
+          <Image src={Media} alt="media project" />
+          <Image src={Wdw3} alt="wdw3 project" />
+        </PhotoImage>
+        <PhotoImage>
+          <Image src={Dashboard} alt="dashboard project" />
+        </PhotoImage>
+      </ProjectContainer>
+      <ProjectContainer>
+        <ProjectGrid>
+          <ProjectHeader>
+            DESIGNING FOR
+            <br /> IMPACT
+          </ProjectHeader>
+          <ProjectText>
+            Our methodologies are meant to address current user
+            <br /> challenges in the Blockchain ecosystems.
+          </ProjectText>
+        </ProjectGrid>
+        <PhotoImage>
+          <Image src={LinkPay} alt="media project" />
+        </PhotoImage>
+      </ProjectContainer>
+    </ProjectWrapper>
+  );
+}

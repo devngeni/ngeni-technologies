@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { Grid, RightGrid } from "../commons";
 import { LeftGrid } from "../commons/LeftGrid";
 import {
   FooterCopyRight,

@@ -57,3 +57,32 @@ export const AiContainer = styled.div`
   align-items: center;
   gap: 20px;
 `;
+
+export const DesignNavWrapper = styled.div`
+  background-color: #000000;
+`;
+export const DesignContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  justify-items: center;
+  align-items: center;
+  padding: 50px 250px 0 250px;
+`;
+export const NavbarLogo = styled.div``;
+export const DesignNavText = styled.div``;
+export const DesignNavMenu = styled.div`
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+gap: 10px;
+`;
+export const DesignNavMenuText = styled.div`
+  font-family: "Syncopate";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  color: #ffffff;
+`;

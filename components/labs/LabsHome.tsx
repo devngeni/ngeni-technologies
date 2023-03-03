@@ -1,4 +1,3 @@
-import Image from "next/image";
 import {
   Button,
   LabLeftGrid,
@@ -8,7 +7,6 @@ import {
   LabsWrapper,
   LabText,
 } from "./Labs.Styles";
-import Hero from "../../public/Heroimg.svg";
 
 export default function LabsHomeSection() {
   return (

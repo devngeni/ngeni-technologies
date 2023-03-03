@@ -1,23 +1,23 @@
 import Head from "next/head";
-import { FooterLabs } from "./footer";
-import Navbar from "./Navbar";
+import { FooterDesign } from "./footer";
+import NavbarDesign from "./NavbarDesign";
 
 interface LayoutProps {
   children: React.ReactNode;
 }
 
-export default function LabsLayout({ children }: LayoutProps) {
+export default function DesignLayout({ children }: LayoutProps) {
   return (
     <>
       <Head>
-        <title>NGENI Technologies</title>
-        <meta name="description" content="ngeni labs" />
+        <title>NGENI Design</title>
+        <meta name="description" content="ngeni design program" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Navbar />
+      <NavbarDesign />
       <main>{children}</main>
-      <FooterLabs />
+      <FooterDesign />
     </>
   );
 }
