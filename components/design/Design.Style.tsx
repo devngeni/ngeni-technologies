@@ -8,7 +8,7 @@ export const DesignWrapper = styled.div`
   }
 `;
 export const DesignContainer = styled.div`
-  background: url("/Video.svg");
+  background: url("/Stone.gif");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;

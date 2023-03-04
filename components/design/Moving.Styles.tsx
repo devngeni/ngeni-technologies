@@ -3,15 +3,19 @@ import styled from "styled-components";
 export const MovingWrapper = styled.div`
   background: ${(props) => props.theme.colors.background};
   height: 70vh;
+  background: url("/Wavytorus.gif") #000000;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.1;
   @media (max-width: 768px) {
     height: 100%;
   }
 `;
 export const MovingContainer = styled.div`
-  background: url("/Wavy.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  position: relative;
+  z-index: 1;
+  opacity: 1;
   height: 100%;
   align-items: center;
   justify-content: center;

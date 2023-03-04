@@ -19,7 +19,7 @@ export default function Navbar() {
         </NavbarHeader>
         <Container style={{padding: "0"}}>
           <NavbarText>Developer Services</NavbarText>
-          <NavbarText onClick={() => router.push('/academy')}>Acadamey</NavbarText>
+          <NavbarText onClick={() => router.push('/academy')}>Academy</NavbarText>
           <NavbarText onClick={() => router.push('/design')}>Design Services</NavbarText>
           <NavbarText onClick={() => router.push('/ai')}>Ngeni AI</NavbarText>
         </Container>
