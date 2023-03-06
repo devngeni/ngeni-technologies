@@ -12,7 +12,7 @@ import Media from "../../public/Media.svg";
 import Image from "next/image";
 import Wdw3 from "../../public/Wdw3.svg";
 import Dashboard from "../../public/Dashboard.svg";
-import LinkPay from "../../public/Linkpay.svg";
+import LinkPay from "../../public/LinkPay.svg";
 export default function ProjectSection() {
   return (
     <ProjectWrapper>
