@@ -10,9 +10,9 @@ import {
 } from "./Design.Style";
 import Media from "../../public/Media.svg";
 import Image from "next/image";
-import Wdw3 from "../../public/wdw3.svg";
-import Dashboard from "../../public/dashboard.svg";
-import LinkPay from "../../public/linkpay.svg";
+import Wdw3 from "../../public/Wdw3.svg";
+import Dashboard from "../../public/Dashboard.svg";
+import LinkPay from "../../public/Linkpay.svg";
 export default function ProjectSection() {
   return (
     <ProjectWrapper>

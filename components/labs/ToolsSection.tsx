@@ -3,7 +3,7 @@ import Mongo from "../../public/Mongo.svg";
 import Elixr from "../../public/Elixr.svg";
 import Rust from "../../public/Rust.svg";
 import Solana from "../../public/Solana.svg";
-import solidity from "../../public/solidity.svg";
+import solidity from "../../public/Solidity.svg";
 import Flutter from "../../public/Flutter.svg";
 import Javascript from "../../public/Javascript.svg";
 import Git from "../../public/Git.svg";
