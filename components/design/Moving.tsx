@@ -8,7 +8,7 @@ import {
 
 export default function MovingSection() {
   return (
-    <MovingWrapper>
+    <MovingWrapper className="moving-bg">
       <MovingContainer>
         <MovingScroll>
           <MovingHeader>IMMERSIVE EXPERIENCES</MovingHeader>

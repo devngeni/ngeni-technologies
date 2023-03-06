@@ -1,13 +1,13 @@
-import { Container } from "./commons";
 import {
   NavbarGrid,
   NavbarHeader,
   NavbarText,
   NavbarWrapper,
 } from "./Navbar.Styles";
-import Logo from "../public/Logo.svg";
+import Logo from "../../public/Logo.svg";
 import Image from "next/image";
 import { useRouter } from "next/router";
+import { Container } from "../commons";
 
 export default function Navbar() {
   const router = useRouter()

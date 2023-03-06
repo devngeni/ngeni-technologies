@@ -2,7 +2,7 @@ import { ChatMessage, ChatResponse } from "@/types";
 import { useState } from "react";
 import { Button } from "../commons";
 import { Input } from "../labs/Subcribe.Styles";
-import { AiText } from "../Navbar.Styles";
+import { AiText } from "../navbar/Navbar.Styles";
 import { AiBody, AiChart, AiChatCard, AiGrid, AiWrapper } from "./AI.Styles";
 import axios from "axios";
 

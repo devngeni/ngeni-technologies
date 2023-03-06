@@ -1,4 +1,4 @@
-import { LandingSection, Layout, ServiceSection } from "@/components";
+import { LandingSection, Layout, ServiceSection } from "@/components/Layouts";
 import TestimonialSection from "@/components/academy/Testimonials";
 import BlogSection from "@/components/academy/Blog";
 import { ThemeProvider } from "styled-components";

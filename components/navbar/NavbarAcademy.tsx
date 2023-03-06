@@ -1,7 +1,7 @@
-import { Button, Container, Grid, Header, Title, Wrapper } from "./commons";
+import { Button, Container } from "../commons";
 import { NavbarGrid, NavbarHeader, NavbarText, NavbarWrapper } from "./Navbar.Styles";
 
-export default function Navbar() {
+export default function NavbarAcademy() {
   return (
     <NavbarWrapper>
       <NavbarGrid>

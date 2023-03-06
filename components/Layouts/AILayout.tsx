@@ -1,21 +1,21 @@
 import Head from "next/head";
-import { FooterAcademy } from "./footer";
-import Navbar from "./NavbarAcademy";
+import AiNavbar from "../navbar/AiNavbar";
+
 interface LayoutProps {
   children: React.ReactNode;
 }
-export default function Layout({ children }: LayoutProps) {
+
+export default function AILayout({ children }: LayoutProps) {
   return (
     <>
       <Head>
-        <title>Ngeni Academy</title>
-        <meta name="description" content="ngeni idensity program" />
+        <title>NGENI AI</title>
+        <meta name="description" content="ngeni AI program" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Navbar />
+      <AiNavbar />
       <main>{children}</main>
-      <FooterAcademy />
     </>
   );
 }

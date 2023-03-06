@@ -1,4 +1,4 @@
-import { AILayout, Chat } from "@/components";
+import { AILayout, Chat } from "@/components/Layouts";
 import { ThemeProvider } from "styled-components";
 
 export default function ChatPage() {

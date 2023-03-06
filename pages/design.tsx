@@ -1,4 +1,4 @@
-import { DesignLayout } from "@/components";
+import { DesignLayout } from "@/components/Layouts";
 import {
   AboutSection,
   DesignHome,

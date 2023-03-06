@@ -1,4 +1,4 @@
-import { LabsLayout } from "@/components";
+import { LabsLayout } from "@/components/Layouts";
 import {
   BusinessSection,
   CompletedSection,

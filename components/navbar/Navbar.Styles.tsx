@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Grid, Header } from "./commons";
+import { Grid, Header } from "../commons";
 
 export const NavbarText = styled.div`
   font-weight: 500;
@@ -75,11 +75,11 @@ export const DesignContainer = styled.div`
 export const NavbarLogo = styled.div``;
 export const DesignNavText = styled.div``;
 export const DesignNavMenu = styled.div`
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-gap: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 `;
 export const DesignNavMenuText = styled.div`
   font-family: "Syncopate";

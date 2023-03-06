@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { Container } from "./commons";
 import {
   AiContainer,
   AiNavText,
@@ -9,9 +8,10 @@ import {
 
   NavbarWrapper,
 } from "./Navbar.Styles";
-import AiBg from "../public/AiBg.svg";
-import Github from "../public/Github.svg";
-import Discord from "../public/Discord.svg";
+import AiBg from "../../public/AiBg.svg";
+import Github from "../../public/Github.svg";
+import Discord from "../../public/Discord.svg";
+import { Container } from "../commons";
 export default function AiNavbar() {
   return (
     <NavbarWrapper style={{ background: "#000", color: "#fff" }}>

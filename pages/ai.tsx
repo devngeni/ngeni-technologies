@@ -1,4 +1,4 @@
-import { AILayout } from "@/components";
+import { AILayout } from "@/components/Layouts";
 import AIHomeSection from "@/components/ai/AI.Home";
 import { ThemeProvider } from "styled-components";
 

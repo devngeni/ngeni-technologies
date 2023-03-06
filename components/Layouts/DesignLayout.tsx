@@ -1,6 +1,6 @@
 import Head from "next/head";
-import { FooterDesign } from "./footer";
-import NavbarDesign from "./NavbarDesign";
+import { FooterDesign } from "../footer";
+import NavbarDesign from "../navbar/NavbarDesign";
 
 interface LayoutProps {
   children: React.ReactNode;

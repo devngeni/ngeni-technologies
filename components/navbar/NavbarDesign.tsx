@@ -1,5 +1,5 @@
 import Image from "next/image";
-import W3Logo from "../public/W3Logo.svg";
+import W3Logo from "../../public/W3Logo.svg";
 import { DesignContainer, DesignNavMenu, DesignNavMenuText, DesignNavText, DesignNavWrapper, NavbarLogo } from "./Navbar.Styles";
 
 export default function NavbarDesign() {

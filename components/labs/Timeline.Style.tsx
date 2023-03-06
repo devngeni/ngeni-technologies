@@ -45,11 +45,11 @@ export const TimeImageWrapper = styled.div`
   align-items: center;
   justify-content: center;
   @media (max-width: 768px) {
-  img {
-    width: 5%;
-    height: 5%;
+    img {
+      width: 5%;
+      height: 5%;
+    }
   }
-}
 `;
 export const TimeLineRightHeader = styled.div`
   display: flex;
@@ -108,6 +108,8 @@ export const RightP = styled(RightHeader)`
   inline-size: 450px;
   overflow-wrap: break-word;
   color: #ffffff;
+  font-weight: 500;
+  font-size: 16px;
   @media (max-width: 768px) {
     font-size: 16px;
     line-height: 20px;
