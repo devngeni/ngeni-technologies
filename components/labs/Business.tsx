@@ -40,9 +40,9 @@ export default function BusinessSection() {
           </BusinessCard>
         </BussinessLeft>
         <BussinessRight>
-          <BusinessCard>
+          <BusinessCard onClick={() => router.push("/engineering")}>
             <Image src={Nstar} width={128} height={128} alt="Business" />
-            <BusinessCardTitle onClick={() => router.push("/")}>
+            <BusinessCardTitle>
               Engineering
             </BusinessCardTitle>
             <BusinessCardText>

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import {
+  DevRating,
   DevsButton,
   DevsContainer,
   DevsGrid,
@@ -25,9 +26,9 @@ export default function HomeSection() {
           <DevsButton>Start A Project</DevsButton>
           <DevsImage>
             <Image src={Rating} alt="Engineering" />
-            <DevsText style={{ fontSize: "16px" }}>
+            <DevRating>
               Rated 4.9 on Trustpilot
-            </DevsText>
+            </DevRating>
           </DevsImage>
         </DevsContainer>
       </DevsGrid>

@@ -225,7 +225,7 @@ export const WhyGrid = styled.div`
   }
 `;
 export const WhyCard = styled.div`
-  background: url("/City.svg");
+  background: url("/City.gif");
   background-repeat: no-repeat;
   background-position: center;
 `;
