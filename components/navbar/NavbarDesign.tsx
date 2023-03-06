@@ -1,8 +1,25 @@
 import Image from "next/image";
 import W3Logo from "../../public/W3Logo.svg";
-import { DesignContainer, DesignNavMenu, DesignNavMenuText, DesignNavText, DesignNavWrapper, NavbarLogo } from "./Navbar.Styles";
-
+import {
+  DesignContainer,
+  DesignNavMenu,
+  DesignNavMenuText,
+  DesignNavText,
+  DesignNavWrapper,
+  NavbarLogo,
+} from "./Navbar.Styles";
+import Menu from "../../public/Menu.svg";
+import { Container } from "../commons";
+import Sidebar from "./Sidebar";
+import { useState } from "react";
 export default function NavbarDesign() {
+  const [isOpen, setIsOpen] = useState(false);
+  const toggleSidebar = () => {
+    setIsOpen(!isOpen);
+  };
+  const handleClose = () => {
+    setIsOpen(false);
+  };
   return (
     <DesignNavWrapper>
       <DesignContainer>
@@ -14,9 +31,17 @@ export default function NavbarDesign() {
             <DesignNavMenuText>Menu</DesignNavMenuText>
           </DesignNavText>
           <DesignNavText>
-            <DesignNavMenuText>
-                ▤
-            </DesignNavMenuText>
+            <>
+              {isOpen ? (
+                <Container>
+                  <Sidebar isOpen={isOpen} onClose={handleClose} />
+                </Container>
+              ) : (
+                <DesignNavMenuText>
+                  <Image src={Menu} alt="hamberger logo" onClick={() => toggleSidebar()}/>
+                </DesignNavMenuText>
+              )}
+            </>
           </DesignNavText>
         </DesignNavMenu>
       </DesignContainer>

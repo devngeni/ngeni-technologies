@@ -15,6 +15,14 @@ export const DevsGrid = styled.div`
   grid-template-columns: 2fr 1fr;
   justify-content: space-around;
   align-items: center;
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 20px;
+  }
 `;
 export const DevsContainer = styled.div`
   display: flex;
@@ -25,6 +33,13 @@ export const DevsContainer = styled.div`
   justify-content: center;
   align-content: center;
   flex-wrap: wrap;
+  @media (max-width: 768px) {
+    padding: 20px;
+    img {
+      width: 90%;
+      height: 90%;
+    }
+  }
 `;
 export const DevsCard = styled.div``;
 export const DevsImage = styled.div`
@@ -32,6 +47,11 @@ export const DevsImage = styled.div`
   flex-direction: row;
   gap: 20px;
   align-items: center;
+  @media (max-width: 768px) {
+    img {
+      width: 40%;
+    }
+  }
 `;
 export const DevsTitle = styled.div`
   font-weight: 600;
@@ -40,6 +60,9 @@ export const DevsTitle = styled.div`
   text-transform: capitalize;
   color: #ffffff;
   font-family: "Urbanist";
+  @media (max-width: 768px) {
+    font-size: 30px;
+  }
 `;
 
 export const DevsText = styled.div`
@@ -88,6 +111,9 @@ export const WhatBody = styled.div`
   justify-content: space-evenly;
   align-items: center;
   align-content: center;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 export const WhatGrid = styled.div`
   display: grid;
@@ -95,12 +121,25 @@ export const WhatGrid = styled.div`
   gap: 20px;
   justify-content: center;
   padding-bottom: 150px;
+  @media (max-width: 768px) {
+  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 `;
 export const WhatContainer = styled.div`
   display: flex;
   height: inherit;
   padding: 50px 0;
   justify-content: space-around;
+  @media (max-width: 768px) {
+    width: 100vw;
+    flex-direction: row;
+    gap: 50px;
+    justify-content: space-evenly;
+    overflow-x: scroll;
+  }
 `;
 export const WhatCard = styled.div`
   width: 367px;
@@ -118,6 +157,13 @@ export const WhatCard = styled.div`
     border: 1.5px solid #27538c;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     transition: 0.3s ease-in-out;
+  }
+  @media (max-width: 768px) {
+    width: 100%;
+    height: 100%;
+    img {
+      width: 10%;
+    }
   }
 `;
 export const WhatImage = styled.div``;

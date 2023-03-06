@@ -10,6 +10,8 @@ import {
   DevsWrapper,
 } from "./Engineering.Styles";
 import Rating from "../../public/Rating.svg";
+import NstarWeb from "../../public/NstarWeb.svg";
+
 export default function HomeSection() {
   return (
     <DevsWrapper className="engineering-bg">
@@ -26,10 +28,11 @@ export default function HomeSection() {
           <DevsButton>Start A Project</DevsButton>
           <DevsImage>
             <Image src={Rating} alt="Engineering" />
-            <DevRating>
-              Rated 4.9 on Trustpilot
-            </DevRating>
+            <DevRating>Rated 4.9 on Trustpilot</DevRating>
           </DevsImage>
+        </DevsContainer>
+        <DevsContainer>
+          <Image src={NstarWeb} alt="Engineering" />
         </DevsContainer>
       </DevsGrid>
     </DevsWrapper>

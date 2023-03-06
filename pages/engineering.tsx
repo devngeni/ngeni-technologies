@@ -1,4 +1,10 @@
-import { HomeSection, OnbordingSection, WhatWeDoSection } from "@/components/engineering";
+import {
+  HomeSection,
+  OnbordingSection,
+  ProjectsSection,
+  ReviewsSection,
+  WhatWeDoSection,
+} from "@/components/engineering";
 import { DevsLayout } from "@/components/Layouts";
 
 export default function Engineering() {
@@ -7,6 +13,8 @@ export default function Engineering() {
       <HomeSection />
       <WhatWeDoSection />
       <OnbordingSection />
+      <ProjectsSection />
+      <ReviewsSection />
     </DevsLayout>
   );
 }

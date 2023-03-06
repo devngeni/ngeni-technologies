@@ -7,7 +7,6 @@ export const Container = styled.div`
   align-items: center;
   padding: 20px 0px;
   @media (max-width: 768px) {
-    display: none;
     img {
       width: 97%;
     }

@@ -27,11 +27,23 @@ export const NavbarHeader = styled(Header)`
   align-items: center;
   display: flex;
   justify-content: center;
+  @media (max-width: 768px) {
+    justify-content: start;
+    img {
+      width: 60%;
+    }
+  }
 `;
 export const NavbarGrid = styled(Grid)`
   grid-template-columns: 1fr 2fr;
   padding: 20px 0;
   align-content: center;
+  @media (max-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 20px;
+  }
 `;
 export const AiNavText = styled.div`
   font-weight: 800;
@@ -88,4 +100,60 @@ export const DesignNavMenuText = styled.div`
   font-size: 20px;
   line-height: 20px;
   color: #ffffff;
+`;
+
+export const NstarWrapper = styled.div``;
+export const NstarText = styled.div`
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+  &:hover {
+    color: #08dcff;
+  }
+`;
+export const NstarContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 20px;
+`;
+export const NstarNav = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+`;
+export const NstarButton = styled.button`
+  width: 169px;
+  height: 51px;
+  border: 1px solid #08dcff;
+  border-radius: 5px;
+  background: transparent;
+  color: #08dcff;
+  cursor: pointer;
+  &:hover {
+    background-color: #08dcff;
+    color: #fff;
+    transition: 0.5s ease-in-out;
+  }
+`;
+
+export const SideWrapper = styled.div`
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+align-content: center;
+height: 100vh;
+gap: 50px;
+`;
+export const SideNavText = styled.div`
+color: #3ebeb8;
+font-weight: 400;
+font-size: 20px;
 `;
