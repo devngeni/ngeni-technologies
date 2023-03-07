@@ -20,8 +20,14 @@ import {
 } from "./Timeline.Style";
 import Vector from "../../public/Vector.svg";
 import Curve from "../../public/Curve.svg";
+import { useEffect, useState } from "react";
 
 export default function TimelineSection() {
+  const [showDivs, setShowDivs] = useState(false);
+
+  useEffect(() => {
+    setShowDivs(true);
+  }, []);
   return (
     <TimelineWrapper>
       <TimelineGrid>
@@ -29,7 +35,7 @@ export default function TimelineSection() {
           <TimeContainer>
             <TimelineText>Development Timeline</TimelineText>
             <TimeImage>
-              <Image src={Curve}  alt="curve-text" />
+              <Image src={Curve} alt="curve-text" />
             </TimeImage>
           </TimeContainer>
           <TimeLineRightHeader>
@@ -41,8 +47,10 @@ export default function TimelineSection() {
             <TimelineP>Start To Completion</TimelineP>
           </TimeLineRightHeader>
         </TimelineLeftGrid>
-        <TimeLineCircle>
-          <TimeGrid>
+        <TimeLineCircle
+          className={showDivs ? "animated-divs show" : "animated-divs"}
+        >
+          <TimeGrid className="animated-div">
             <TimelineRightGrid>
               <Timeline>
                 <Text>1</Text>
@@ -60,13 +68,13 @@ export default function TimelineSection() {
             </TimelineRightGrid>
           </TimeGrid>
 
-          <TimeGrid>
+          <TimeGrid className="animated-div">
             <TimelineRightGrid>
               <Timeline>
                 <Text>2</Text>
               </Timeline>
               <TimeImageWrapper>
-                <Image src={Vector}  alt="lines" />
+                <Image src={Vector} alt="lines" />
               </TimeImageWrapper>
             </TimelineRightGrid>
             <TimelineRightGrid>
@@ -78,13 +86,13 @@ export default function TimelineSection() {
             </TimelineRightGrid>
           </TimeGrid>
 
-          <TimeGrid>
+          <TimeGrid className="animated-div">
             <TimelineRightGrid>
               <Timeline>
                 <Text>3</Text>
               </Timeline>
               <TimeImageWrapper>
-                <Image src={Vector}  alt="lines" />
+                <Image src={Vector} alt="lines" />
               </TimeImageWrapper>
             </TimelineRightGrid>
             <TimelineRightGrid>
@@ -96,7 +104,7 @@ export default function TimelineSection() {
             </TimelineRightGrid>
           </TimeGrid>
 
-          <TimeGrid>
+          <TimeGrid className="animated-div">
             <TimelineRightGrid>
               <Timeline>
                 <Text>4</Text>

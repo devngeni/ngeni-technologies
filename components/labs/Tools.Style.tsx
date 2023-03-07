@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import { motion } from "framer-motion";
 export const ToolsWrapper = styled.div`
   width: 100%;
   display: flex;
@@ -32,22 +32,17 @@ export const ToolsGrid = styled.div`
   background-repeat: repeat;
   background-size: cover;
   background-position: center;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+  margin: 0 auto;
+  position: relative;
   gap: 50px;
   @media (max-width: 768px) {
-    width: 100%;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: nowrap;
-    overflow-x: scroll;
     transition: 0.5s ease-in-out;
   }
 `;
 
-export const ToolsCard = styled.div`
+export const ToolsCard = styled(motion.div)`
   background: #11191f;
   border-radius: 15px;
   width: 200px;
@@ -57,5 +52,14 @@ export const ToolsCard = styled.div`
   justify-content: center;
   align-items: center;
   white-space: nowrap;
+  animation: moveLeft 5s linear infinite;
+  @media (max-width: 768px) {
+    width: 100px;
+    height: 50px;
+    padding: 10px;
+    img {
+      width: 60%;
+    }
+  }
 `;
 export const ToolsCardIcon = styled.div``;

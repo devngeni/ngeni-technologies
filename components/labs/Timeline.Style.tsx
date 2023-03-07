@@ -47,7 +47,6 @@ export const TimeImageWrapper = styled.div`
   @media (max-width: 768px) {
     img {
       width: 5%;
-      height: 5%;
     }
   }
 `;
@@ -81,6 +80,7 @@ export const TimeContainer = styled.div`
 export const TimeLineCircle = styled.div`
   background: ${({ theme }) => theme.colors.main};
   padding: 20px 0;
+  overflow: hidden;
   @media (max-width: 768px) {
     height: 100vh;
     overflow: scroll;
