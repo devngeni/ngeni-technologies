@@ -3,7 +3,6 @@ import { FooterIcons } from "../footer/Footer.Style";
 import { SideNavText, SideWrapper } from "./Navbar.Styles";
 import Twitter from "../../public/Twitter.svg";
 import LinkedIn from "../../public/LinkedIn.svg";
-import Logo from "../../public/Logo.svg";
 import Youtube from "../../public/Youtube.svg";
 import Discord from "../../public/Discord.svg";
 import Image from "next/image";
@@ -27,6 +26,7 @@ const Container = styled.div<ContainerProps>`
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   transform: translateX(${({ isOpen }) => (isOpen ? 0 : "-100%")});
   transition: transform 1s ease-in-out;
+  z-index: 100;
 `;
 
 const CloseButton = styled.button`
@@ -45,9 +45,10 @@ const CloseButton = styled.button`
 const Sidebar = ({ isOpen, onClose }: ContainerProps) => {
     const router = useRouter();
   return (
-    <Container isOpen={isOpen}>
+    <Container isOpen={isOpen} className="moving-bg">
       <CloseButton onClick={onClose}>×</CloseButton>
       <SideWrapper>
+        <SideNavText onClick={() => router.push("/")}>Home</SideNavText>
         <SideNavText onClick={() => router.push("/design")}>Design Service</SideNavText>
         <SideNavText onClick={() => router.push("/academy")}>Ngeni Academy</SideNavText>
         <SideNavText onClick={() => router.push("/ai")}>Ngeni Ai</SideNavText>
@@ -63,5 +64,4 @@ const Sidebar = ({ isOpen, onClose }: ContainerProps) => {
     </Container>
   );
 };
-
 export default Sidebar;

@@ -19,7 +19,6 @@ export const NavbarWrapper = styled.div`
   width: 100%;
   padding: 36px auto;
   align-items: center;
-  display: content;
   background-color: ${({ theme }) => theme.colors.background};
 `;
 

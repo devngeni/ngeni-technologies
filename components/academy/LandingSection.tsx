@@ -29,6 +29,7 @@ import Polygon from "../../public/Polygon.svg";
 import Harmony from "../../public/Harmony.svg";
 import Laptop from "../../public/Laptop.svg";
 import Corhort from "../../public/Cohort.svg";
+import { ImageAnimation, ImageContainer } from "../commons/Container";
 
 export default function LandingSection() {
   return (
@@ -94,12 +95,20 @@ export default function LandingSection() {
             Learners
           </LandingTitle>
         </LeftGrid>
-        <Container>
-          <Image src={Celo} width="100" height="100" alt="celo logo" />
-          <Image src={Eth} width="140" height="50" alt="eth logo" />
-          <Image src={Polygon} width="50" height="80" alt="polygon logo" />
-          <Image src={Harmony} width="50" height="80" alt="harmony logo" />
-        </Container>
+        <ImageContainer>
+          <ImageAnimation duration={3}>
+            <Image src={Celo} width={46} height={38} alt="celo logo" />
+          </ImageAnimation>
+          <ImageAnimation duration={4}>
+            <Image src={Eth} width={46} height={38} alt="eth logo" />
+          </ImageAnimation>
+          <ImageAnimation duration={6}>
+          <Image src={Polygon} width={26} height={28} alt="polygon logo" />
+          </ImageAnimation>
+          <ImageAnimation duration={8}>
+            <Image src={Harmony} width={26} height={28} alt="harmony logo" />
+          </ImageAnimation>
+        </ImageContainer>
       </Grid>
     </Wrapper>
   );
