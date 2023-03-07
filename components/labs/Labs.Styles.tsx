@@ -4,6 +4,7 @@ export const LabsWrapper = styled.div`
 background: url("/Heroimg.svg") no-repeat;
 background-position: right;
 background-size: contain;
+height: 100vh;
 `;
 
 export const LabLeftGrid = styled.div`
