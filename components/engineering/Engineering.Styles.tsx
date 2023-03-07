@@ -122,11 +122,11 @@ export const WhatGrid = styled.div`
   justify-content: center;
   padding-bottom: 150px;
   @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 `;
 export const WhatContainer = styled.div`
   display: flex;

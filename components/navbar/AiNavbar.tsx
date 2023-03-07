@@ -19,8 +19,7 @@ export default function AiNavbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const [mQuery, setMQuery] = useState({
-    matches:
-      typeof window !== "undefined" && window.innerWidth > 768 ? true : false,
+    matches: typeof window !== "undefined" && window.innerWidth > 768 ? true : false,
   });
 
   useEffect(() => {
