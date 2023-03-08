@@ -19,14 +19,26 @@ export default function NavbarAcademy() {
     setIsOpen(false);
   };
   const [mQuery, setMQuery] = useState({
-    matches: typeof window !== "undefined" && window.innerWidth > 768 ? true : false,
+    matches: false,
   });
 
   useEffect(() => {
-    let mediaQuery = window.matchMedia("(min-width: 768px)");
-    mediaQuery.addEventListener("change", setMQuery);
+    if (typeof window !== "undefined") {
+      setMQuery({
+        matches: window.innerWidth > 768,
+      });
+      let mediaQuery = window.matchMedia("(min-width: 768px)");
+      const handler = (e: { matches: any; }) => {
+        setMQuery({
+          matches: e.matches,
+        });
+      };
+      mediaQuery.addEventListener("change", handler);
 
-    return () => mediaQuery.removeEventListener("change", setMQuery);
+      return () => {
+        mediaQuery.removeEventListener("change", handler);
+      };
+    }
   }, []);
   return (
     <NavbarWrapper>

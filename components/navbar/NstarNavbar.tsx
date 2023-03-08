@@ -13,14 +13,26 @@ import { useEffect, useState } from "react";
 import Menu from "../../public/Menu.svg";
 export default function NstarNavbar() {
   const [mQuery, setMQuery] = useState({
-    matches: typeof window !== "undefined" && window.innerWidth > 768 ? true : false,
+    matches: false,
   });
 
   useEffect(() => {
-    let mediaQuery = window.matchMedia("(min-width: 768px)");
-    mediaQuery.addEventListener("change", setMQuery);
+    if (typeof window !== "undefined") {
+      setMQuery({
+        matches: window.innerWidth > 768,
+      });
+      let mediaQuery = window.matchMedia("(min-width: 768px)");
+      const handler = (e: any) => {
+        setMQuery({
+          matches: e.matches,
+        });
+      };
+      mediaQuery.addEventListener("change", handler);
 
-    return () => mediaQuery.removeEventListener("change", setMQuery);
+      return () => {
+        mediaQuery.removeEventListener("change", handler);
+      };
+    }
   }, []);
   return (
     <NstarWrapper className="engineering-bg">
