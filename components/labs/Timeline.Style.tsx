@@ -82,8 +82,6 @@ export const TimeLineCircle = styled.div`
   padding: 20px 0;
   overflow: hidden;
   @media (max-width: 768px) {
-    height: 100vh;
-    overflow: scroll;
     scroll-behavior: smooth;
     transition: 0.5s ease-in-out;
   }

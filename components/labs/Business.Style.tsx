@@ -1,6 +1,12 @@
 import styled from "styled-components";
 import { ToolsTitle, ToolsWrapper } from "./Tools.Style";
-
+interface isExpanded {
+  isExpanded: boolean;
+  isAnimating: boolean;
+}
+interface isHidden {
+  hidden: boolean;
+}
 export const BusinessWrapper = styled(ToolsWrapper)`
   justify-content: space-around;
   background: url("/EthBg.svg") #010a0f;
@@ -74,7 +80,12 @@ export const BusinessCardText = styled.p`
   width: 322px;
 `;
 
-export const BusinessContainer = styled.div``;
+export const BusinessContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
 export const ProjectWrapper = styled(ToolsWrapper)`
   background-image: url("/Square.svg");
   background-repeat: no-repeat;
@@ -139,25 +150,71 @@ export const ProjectContainer = styled.div`
   align-content: center;
   gap: 11px;
 `;
-export const ProjectLeft = styled.div`
+export const ProjectLeft = styled.div<isHidden>`
   background: #d9d9d9;
   padding: 50px 0;
-  display: flex;
+  display: ${({ hidden }) => (hidden ? "none" : "flex")};
   flex-direction: column;
   justify-content: space-between;
+  transition: all 0.5s linear;
+  ${({ hidden }) =>
+    hidden
+      ? `
+    width: 0;
+    padding: 0;
+    flex-shrink: 1;
+  `
+      : `
+    width: 100%;
+    flex-grow: 1;
+  `}
   @media (max-width: 768px) {
-    padding: 0 20px;  
+    padding: 0 20px;
   }
 `;
-export const ProjectRight = styled.div`
+export const CompletedGrid = styled.div`
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 100vh;
+`;
+export const ProjectRight = styled.div<isExpanded>`
   background-image: url("/Boom.svg");
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: left;
+  background-size: contain;
+  background-position: center;
   background-size: cover;
   width: 100%;
-  height: 935px;
+  height: 100%;
+  transition: all 0.5s ease;
+  transform: translateY(-100%);
+  animation: expand-right-grid 0.5s ease-in-out forwards;
+  animation-delay: 0.5s;
+
+  ${({ isExpanded }) =>
+    isExpanded &&
+    `
+    grid-column: 1 / -1;
+    transform: translateY(0%);
+    cursor: pointer;
+  `}
+  ${({ isAnimating }) =>
+    isAnimating &&
+    `
+  opacity: 1;
+`}
+
+@keyframes expand-right-grid {
+    0% {
+      transform: translateY(-100%);
+      height: 0;
+    }
+    100% {
+      transform: translateY(0%);
+      height: 100%;
+    }
+  }
 `;
+
 export const ProjectCardTitle = styled.div`
   font-weight: 500;
   font-size: 32.9748px;
@@ -218,12 +275,14 @@ export const WhyGrid = styled.div`
   padding: 50px 0;
   gap: 50px;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-content: center;
   @media (max-width: 768px) {
   }
 `;
+
 export const WhyCard = styled.div`
   background: url("/City.gif");
   background-repeat: no-repeat;

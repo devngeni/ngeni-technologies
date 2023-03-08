@@ -21,9 +21,8 @@ export default function Navbar() {
   useEffect(() => {
     let mediaQuery = window.matchMedia("(min-width: 768px)");
     mediaQuery.addEventListener("change", setMQuery);
-
     return () => mediaQuery.removeEventListener("change", setMQuery);
-  }, []);
+  }, [setMQuery]);
   const router = useRouter();
   const toggleSidebar = () => {
     setIsOpen(!isOpen);

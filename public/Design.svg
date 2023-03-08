@@ -5,7 +5,6 @@
 <rect width="1512" height="1545" transform="translate(-344 -988)" fill="#010A0F"/>
 <g filter="url(#filter0_bii_0_1)">
 <rect x="-228" y="-64" width="620" height="516" rx="10" fill="white" fill-opacity="0.03"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M78.5135 52.5668C67.6567 64.5977 69.8603 83.1925 81.979 93.9707C94.0977 104.749 112.708 102.551 123.565 90.5204L156.486 54.292C167.343 42.2611 165.14 23.6662 153.021 12.888C140.902 2.1098 122.292 4.30744 111.435 16.3383L78.5135 52.5668Z" fill="url(#paint0_linear_0_1)"/>
 <g filter="url(#filter1_bii_0_1)">
 <circle cx="81" cy="81.4294" r="80.5" fill="white" fill-opacity="0.03"/>
 </g>
@@ -16,7 +15,7 @@
 </g>
 <defs>
 <filter id="filter0_bii_0_1" x="-300.722" y="-136.722" width="765.444" height="661.444" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feFlood flood-opacity="0.9" result="BackgroundImageFix"/>
 <feGaussianBlur in="BackgroundImageFix" stdDeviation="36.3611"/>
 <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_0_1"/>
 <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_0_1" result="shape"/>
@@ -34,7 +33,7 @@
 <feBlend mode="normal" in2="effect2_innerShadow_0_1" result="effect3_innerShadow_0_1"/>
 </filter>
 <filter id="filter1_bii_0_1" x="-44.853" y="-44.4237" width="251.706" height="251.706" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feFlood flood-opacity="0.9" result="BackgroundImageFix"/>
 <feGaussianBlur in="BackgroundImageFix" stdDeviation="22.6765"/>
 <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_0_1"/>
 <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_0_1" result="shape"/>

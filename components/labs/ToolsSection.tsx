@@ -10,7 +10,6 @@ import Git from "../../public/Git.svg";
 import Typescript from "../../public/Typescript.svg";
 import Python from "../../public/Python.svg";
 import Image from "next/image";
-import { useEffect, useRef, useState } from "react";
 interface ImageData {
   image: string;
 }
@@ -46,8 +45,7 @@ const toolsData: ImageData[] = [
     image: Python,
   },
 ];
-export default function ToolsSection() {
-  
+export default function ToolsSection() { 
   return (
     <ToolsWrapper>
       <ToolsTitle>
