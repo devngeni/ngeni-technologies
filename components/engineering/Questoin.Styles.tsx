@@ -25,7 +25,11 @@ const Title = styled.h3`
   line-height: 24px;
   text-align: center;
   letter-spacing: 0.025em;
+  caret-color: transparent;
   color: #343434;
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
 `;
 
 const Icon = styled(Title)<IconProps>`
@@ -48,6 +52,12 @@ const Wrapper = styled.div`
   border-radius: 10px;
   align-items: center;
   cursor: pointer;
+  @media (max-width: 768px) {
+    padding: 10px;
+    width: 100%;
+    gap: 10px;
+    justify-content: space-evenly;
+  }
 `;
 const CardElement = styled.div`
   width: 100%;
@@ -57,6 +67,9 @@ const CardElement = styled.div`
   align-items: center;
   align-content: center;
   background: #ffffff;
+  @media (max-width: 768px) {
+    align-items: flex-start;
+  }
 `;
 
 const CardBody = styled.div<IconProps>`
@@ -69,6 +82,10 @@ const CardBody = styled.div<IconProps>`
   transition: all 0.3s ease-in-out;
   border: ${({ isOpen }) =>
     isOpen ? `1.5px solid #125B50;border-radius: 10px;` : `border: none;`};
+    @media (max-width: 768px) {
+        margin: 10px;
+        align-items: flex-start;
+    }
 `;
 
 const Text = styled(Wrapper)`

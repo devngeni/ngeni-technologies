@@ -111,6 +111,17 @@ export const WhatBody = styled.div`
   justify-content: space-evenly;
   align-items: center;
   align-content: center;
+  object-fit: cover;
+  animation: slide-infinite 10s linear infinite;
+
+  @keyframes slide-infinite {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
   @media (max-width: 768px) {
     width: 100%;
   }

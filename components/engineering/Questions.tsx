@@ -76,7 +76,7 @@ export default function QuestionsSection() {
           <CardBody isOpen={isOpen1}>
             <Wrapper onClick={() => handleClick1()}>
               <Title>
-                1. What is a Monitor? What are the lists of Basic and Advanced
+                2. What is a Monitor? What are the lists of Basic and Advanced
                 monitors?
               </Title>
               <Icon isOpen={isOpen1}>+</Icon>
@@ -98,7 +98,7 @@ export default function QuestionsSection() {
           <CardBody isOpen={isOpen2}>
             <Wrapper onClick={() => handleClick2()}>
               <Title>
-                1. What is a Monitor? What are the lists of Basic and Advanced
+                3. What is a Monitor? What are the lists of Basic and Advanced
                 monitors?
               </Title>
               <Icon isOpen={isOpen2}>+</Icon>
@@ -120,7 +120,7 @@ export default function QuestionsSection() {
           <CardBody isOpen={isOpen3}>
             <Wrapper onClick={() => handleClick3()}>
               <Title>
-                1. What is a Monitor? What are the lists of Basic and Advanced
+                4. What is a Monitor? What are the lists of Basic and Advanced
                 monitors?
               </Title>
               <Icon isOpen={isOpen3}>+</Icon>
@@ -142,7 +142,7 @@ export default function QuestionsSection() {
           <CardBody isOpen={isOpen4}>
             <Wrapper onClick={() => handleClick4()}>
               <Title>
-                1. What is a Monitor? What are the lists of Basic and Advanced
+                5. What is a Monitor? What are the lists of Basic and Advanced
                 monitors?
               </Title>
               <Icon isOpen={isOpen4}>+</Icon>
@@ -164,7 +164,7 @@ export default function QuestionsSection() {
           <CardBody isOpen={isOpen5}>
             <Wrapper onClick={() => handleClick5()}>
               <Title>
-                1. What is a Monitor? What are the lists of Basic and Advanced
+                6. What is a Monitor? What are the lists of Basic and Advanced
                 monitors?
               </Title>
               <Icon isOpen={isOpen5}>+</Icon>
@@ -186,7 +186,7 @@ export default function QuestionsSection() {
           <CardBody isOpen={isOpen6}>
             <Wrapper onClick={() => handleClick6()}>
               <Title>
-                1. What is a Monitor? What are the lists of Basic and Advanced
+                7. What is a Monitor? What are the lists of Basic and Advanced
                 monitors?
               </Title>
               <Icon isOpen={isOpen6}>+</Icon>
