@@ -1,5 +1,41 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { Grid, Title } from "../commons";
+
+const rotate = keyframes`
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+`;
+
+const pause = keyframes`
+  0% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+`;
+
+export const Container = styled.div`
+  position: relative;
+  width: 300px;
+  height: 100%;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+`;
 
 export const TimelineWrapper = styled.div``;
 export const TimelineGrid = styled.div`
@@ -35,9 +71,14 @@ export const TimeImage = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  animation: ${rotate} 5s linear infinite;
   img {
     width: 90%;
     height: 90%;
+  }
+
+  &:nth-of-type(2) {
+    animation: ${pause} 5s linear infinite;
   }
 `;
 export const TimeImageWrapper = styled.div`

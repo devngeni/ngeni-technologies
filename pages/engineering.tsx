@@ -2,6 +2,7 @@ import {
   HomeSection,
   OnbordingSection,
   ProjectsSection,
+  QuestionsSection,
   ReviewsSection,
   WhatWeDoSection,
 } from "@/components/engineering";
@@ -15,6 +16,7 @@ export default function Engineering() {
       <OnbordingSection />
       <ProjectsSection />
       <ReviewsSection />
+      <QuestionsSection />
     </DevsLayout>
   );
 }

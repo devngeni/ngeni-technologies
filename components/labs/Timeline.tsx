@@ -17,6 +17,7 @@ import {
   TimelineText,
   TimeLineTitle,
   TimelineWrapper,
+  Container,
 } from "./Timeline.Style";
 import Vector from "../../public/Vector.svg";
 import Curve from "../../public/Curve.svg";
@@ -35,7 +36,9 @@ export default function TimelineSection() {
           <TimeContainer>
             <TimelineText>Development Timeline</TimelineText>
             <TimeImage>
-              <Image src={Curve} alt="curve-text" />
+              <Container>
+                <Image src={Curve} alt="curve-text" />
+              </Container>
             </TimeImage>
           </TimeContainer>
           <TimeLineRightHeader>
