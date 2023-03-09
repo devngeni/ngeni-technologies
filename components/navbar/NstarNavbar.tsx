@@ -11,7 +11,12 @@ import {
 import NstarLogo from "../../public/NstarLogo.svg";
 import { useEffect, useState } from "react";
 import Menu from "../../public/Menu.svg";
+import { Container } from "../commons";
+import Sidebar from "./Sidebar";
+import { useRouter } from "next/router";
+
 export default function NstarNavbar() {
+  const [isOpen, setIsOpen] = useState(false);
   const [mQuery, setMQuery] = useState({
     matches: false,
   });
@@ -34,6 +39,13 @@ export default function NstarNavbar() {
       };
     }
   }, []);
+  const router = useRouter();
+  const toggleSidebar = () => {
+    setIsOpen(!isOpen);
+  };
+  const handleClose = () => {
+    setIsOpen(false);
+  };
   return (
     <NstarWrapper className="engineering-bg">
       <NavbarGrid>
@@ -41,15 +53,29 @@ export default function NstarNavbar() {
           <Image src={NstarLogo} alt="logo" />
         </NstarNav>
         {mQuery.matches ? (
-        <NstarContainer>
-          <NstarText>Support</NstarText>
-          <NstarText>Pricing</NstarText>
-          <NstarButton>Start a Project</NstarButton>
-        </NstarContainer>
+          <NstarContainer>
+            <NstarText>Support</NstarText>
+            <NstarText>Pricing</NstarText>
+            <NstarButton>Start a Project</NstarButton>
+          </NstarContainer>
         ) : (
-            <NstarContainer>
-                <Image src={Menu} width={24} height={24} alt="logo" />
-            </NstarContainer>
+          <>
+            {isOpen ? (
+              <Container>
+                <Sidebar isOpen={isOpen} onClose={handleClose} />
+              </Container>
+            ) : (
+              <NstarContainer>
+                <Image
+                  src={Menu}
+                  width={24}
+                  height={24}
+                  alt="logo"
+                  onClick={() => toggleSidebar()}
+                />
+              </NstarContainer>
+            )}
+          </>
         )}
       </NavbarGrid>
     </NstarWrapper>

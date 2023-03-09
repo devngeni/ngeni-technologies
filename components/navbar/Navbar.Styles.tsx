@@ -101,7 +101,11 @@ export const DesignNavMenuText = styled.div`
   color: #ffffff;
 `;
 
-export const NstarWrapper = styled.div``;
+export const NstarWrapper = styled.div`
+position: absolute;
+z-index: 1;
+width: 100%;
+`;
 export const NstarText = styled.div`
   font-family: "Quicksand";
   font-style: normal;
