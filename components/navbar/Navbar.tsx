@@ -51,7 +51,7 @@ export default function Navbar() {
         </NavbarHeader>
         {mQuery.matches ? (
           <Container style={{ padding: "0" }}>
-            <NavbarText>Developer Services</NavbarText>
+            <NavbarText onClick={() => router.push("/engineering")}>Developer Services</NavbarText>
             <NavbarText onClick={() => router.push("/academy")}>
               Academy
             </NavbarText>
