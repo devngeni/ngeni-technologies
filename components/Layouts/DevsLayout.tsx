@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { FooterDevs } from "../footer";
 import { NstarNavbar } from "../navbar";
 interface Props {
   children: React.ReactNode;
@@ -14,6 +15,7 @@ export default function DevsLayout({ children }: Props) {
       </Head>
       <NstarNavbar />
       <main>{children}</main>
+      <FooterDevs />
     </>
   );
 }

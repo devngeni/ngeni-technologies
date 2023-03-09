@@ -137,6 +137,7 @@ export const WhatGrid = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 20px 0;
   }
 `;
 export const WhatContainer = styled.div`
@@ -185,6 +186,9 @@ export const WhatTitle = styled(DevsTitle)`
   justify-content: center;
   align-items: center;
   padding: 50px 0;
+  @media (max-width: 768px) {
+    padding: 20px 0;
+  }
 `;
 export const WhatText = styled.div`
   font-family: "Quicksand";
