@@ -3,10 +3,10 @@ import styled from "styled-components";
 export const DevsWrapper = styled.div`
   width: 100%;
   height: 100vh;
-  background: radial-gradient(
-    50% 50% at 50% 50%,
-    rgba(250, 92, 134, 0.2) 0%,
-    rgba(250, 92, 134, 0) 100%
+  background: linear-gradient(
+    232.25deg,
+    #0ea8ec 3.61%,
+    rgba(53, 4, 85, 0.5) 100%
   );
 `;
 export const DevsGrid = styled.div`

@@ -34,7 +34,7 @@ export const LabsGrid = styled.div`
 export const LabsTitle = styled.h1`
   font-weight: 700;
   font-size: ${({ theme }) => theme.fontSizes.title};
-  line-height: 92px;
+  line-height: 9.2rem;
   color: #ffffff;
   span {
     color: #3ebeb8;

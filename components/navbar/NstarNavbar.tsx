@@ -47,7 +47,7 @@ export default function NstarNavbar() {
     setIsOpen(false);
   };
   return (
-    <NstarWrapper className="engineering-bg">
+    <NstarWrapper>
       <NavbarGrid>
         <NstarNav>
           <Image src={NstarLogo} alt="logo" />

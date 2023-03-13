@@ -68,12 +68,12 @@ export default function WhatWeDoSection() {
       image: Dns,
     },
     {
-      title: "Item 5",
+      title: "Smart-Contract Development",
       text: "Next-gen Web 3, Blockchain & Fintech Engineering Studio.",
       image: Terminal,
     },
     {
-      title: "Item 6",
+      title: "Bots Development",
       text: "Next-gen Web 3, Blockchain & Fintech Engineering Studio.",
       image: Contacts,
     },

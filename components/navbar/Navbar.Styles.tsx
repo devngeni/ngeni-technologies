@@ -105,6 +105,7 @@ export const NstarWrapper = styled.div`
 position: absolute;
 z-index: 1;
 width: 100%;
+background-color: transparent;
 `;
 export const NstarText = styled.div`
   font-family: "Quicksand";
@@ -112,10 +113,12 @@ export const NstarText = styled.div`
   font-weight: 600;
   font-size: 16px;
   line-height: 20px;
-  color: rgba(255, 255, 255, 0.6);
+  color: #fff;
   cursor: pointer;
   &:hover {
     color: #08dcff;
+    font-weight: 700;
+    transition: 0.2s ease-in-out;
   }
 `;
 export const NstarContainer = styled.div`
@@ -137,7 +140,7 @@ export const NstarButton = styled.button`
   border: 1px solid #08dcff;
   border-radius: 5px;
   background: transparent;
-  color: #08dcff;
+  color: #fff;
   cursor: pointer;
   &:hover {
     background-color: #08dcff;
