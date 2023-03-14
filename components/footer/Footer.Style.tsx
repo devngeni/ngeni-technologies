@@ -36,6 +36,7 @@ export const FooterHeader = styled(Header)`
   color: #ffffff;
 `;
 export const FooterText = styled.div`
+  font-family: "Montserrat";
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
@@ -45,6 +46,7 @@ export const FooterText = styled.div`
   }
 `;
 export const FooterTitle = styled.div`
+  font-family: "Montserrat";
   font-weight: 600;
   font-size: 16px;
   line-height: 20px;
