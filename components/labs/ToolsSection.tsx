@@ -1,4 +1,4 @@
-import { ToolsCard, ToolsGrid, ToolsTitle, ToolsWrapper } from "./Tools.Style";
+import { ToolsCard, ToolsGrid, ToolsText, ToolsTitle, ToolsWrapper } from "./Tools.Style";
 import Mongo from "../../public/Mongo.svg";
 import Elixr from "../../public/Elixr.svg";
 import Rust from "../../public/Rust.svg";
@@ -45,12 +45,19 @@ const toolsData: ImageData[] = [
     image: Python,
   },
 ];
-export default function ToolsSection() { 
+export default function ToolsSection() {
   return (
     <ToolsWrapper>
       <ToolsTitle>
         Some&nbsp;<span>Technologies</span>&nbsp;We Use
       </ToolsTitle>
+      <ToolsText>
+        We are engineering robust, user-focused Web3 solutions driving
+        breakthrough efficiency and <br />bottom-line results, Our skill spans to
+        experts in translating project requirements into technical solutions,<br />
+        and fanatical about quality, usability, security and scalability.
+      </ToolsText>
+
       <ToolsGrid className="image-row">
         {toolsData.map((image, index) => (
           <ToolsCard key={index}>

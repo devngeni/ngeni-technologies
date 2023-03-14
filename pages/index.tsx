@@ -22,7 +22,7 @@ export default function LabsHomePage() {
       section: "#ffffff",
     },
     fonts: {
-      body: "Inter, sans-serif",
+      body: "  Montserrat",
     },
     fontSizes: {
       body: "16px",

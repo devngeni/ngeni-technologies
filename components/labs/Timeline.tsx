@@ -18,6 +18,14 @@ import {
   TimeLineTitle,
   TimelineWrapper,
   Container,
+  StyledDiv1,
+  StyledDiv2,
+  StyledDiv3,
+  StyledDiv4,
+  fadeIn,
+  fadeOut,
+  FADE_IN_ANIMATION_NAME,
+  StyledDiv5,
 } from "./Timeline.Style";
 import Vector from "../../public/Vector.svg";
 import Curve from "../../public/Curve.svg";
@@ -25,6 +33,22 @@ import { useEffect, useState } from "react";
 
 export default function TimelineSection() {
   const [showDivs, setShowDivs] = useState(false);
+
+  const handleAnimationEnd = (e: React.AnimationEvent<HTMLDivElement>) => {
+    if (e.animationName === FADE_IN_ANIMATION_NAME) {
+      const styledDivs = document.querySelectorAll(".TimeGrid");
+      const allAreVisible = Array.from(styledDivs).every(
+        (div: any) => div.style.opacity === "1"
+      );
+      if (allAreVisible) {
+        styledDivs.forEach((div: any) => {
+          div.style.animationName = fadeOut;
+          div.style.animationDelay = "4s";
+          div.style.animationPlayState = "running";
+        });
+      }
+    }
+  };
 
   useEffect(() => {
     setShowDivs(true);
@@ -36,9 +60,7 @@ export default function TimelineSection() {
           <TimeContainer>
             <TimelineText>Development Timeline</TimelineText>
             <TimeImage>
-              <Container>
                 <Image src={Curve} alt="curve-text" />
-              </Container>
             </TimeImage>
           </TimeContainer>
           <TimeLineRightHeader>
@@ -50,10 +72,8 @@ export default function TimelineSection() {
             <TimelineP>Start To Completion</TimelineP>
           </TimeLineRightHeader>
         </TimelineLeftGrid>
-        <TimeLineCircle
-          className={showDivs ? "animated-divs show" : "animated-divs"}
-        >
-          <TimeGrid className="animated-div">
+        <TimeLineCircle>
+          <StyledDiv1 onAnimationEnd={handleAnimationEnd} className="TimeGrid">
             <TimelineRightGrid>
               <Timeline>
                 <Text>1</Text>
@@ -69,9 +89,9 @@ export default function TimelineSection() {
                 est purus eu tempor tincidunt commodo.
               </RightP>
             </TimelineRightGrid>
-          </TimeGrid>
+          </StyledDiv1>
 
-          <TimeGrid className="animated-div">
+          <StyledDiv2 onAnimationEnd={handleAnimationEnd} className="TimeGrid">
             <TimelineRightGrid>
               <Timeline>
                 <Text>2</Text>
@@ -81,15 +101,15 @@ export default function TimelineSection() {
               </TimeImageWrapper>
             </TimelineRightGrid>
             <TimelineRightGrid>
-              <RightHeader>Ideation & Evaluation</RightHeader>
+              <RightHeader>Product Design</RightHeader>
               <RightP>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
                 est purus eu tempor tincidunt commodo.
               </RightP>
             </TimelineRightGrid>
-          </TimeGrid>
+          </StyledDiv2>
 
-          <TimeGrid className="animated-div">
+          <StyledDiv3 onAnimationEnd={handleAnimationEnd} className="TimeGrid">
             <TimelineRightGrid>
               <Timeline>
                 <Text>3</Text>
@@ -99,28 +119,46 @@ export default function TimelineSection() {
               </TimeImageWrapper>
             </TimelineRightGrid>
             <TimelineRightGrid>
-              <RightHeader>Ideation & Evaluation</RightHeader>
+              <RightHeader>Web, App and dApp Development</RightHeader>
               <RightP>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
                 est purus eu tempor tincidunt commodo.
               </RightP>
             </TimelineRightGrid>
-          </TimeGrid>
+          </StyledDiv3>
 
-          <TimeGrid className="animated-div">
+          <StyledDiv4 onAnimationEnd={handleAnimationEnd} className="TimeGrid">
             <TimelineRightGrid>
               <Timeline>
                 <Text>4</Text>
               </Timeline>
+              <TimeImageWrapper>
+                <Image src={Vector} alt="lines" />
+              </TimeImageWrapper>
             </TimelineRightGrid>
             <TimelineRightGrid>
-              <RightHeader>Ideation & Evaluation</RightHeader>
+              <RightHeader>AI & Machine Learning</RightHeader>
               <RightP>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
                 est purus eu tempor tincidunt commodo.
               </RightP>
             </TimelineRightGrid>
-          </TimeGrid>
+          </StyledDiv4>
+
+          <StyledDiv5 onAnimationEnd={handleAnimationEnd} className="TimeGrid">
+            <TimelineRightGrid>
+              <Timeline>
+                <Text>5</Text>
+              </Timeline>
+            </TimelineRightGrid>
+            <TimelineRightGrid>
+              <RightHeader>Support & Management</RightHeader>
+              <RightP>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
+                est purus eu tempor tincidunt commodo.
+              </RightP>
+            </TimelineRightGrid>
+          </StyledDiv5>
         </TimeLineCircle>
       </TimelineGrid>
     </TimelineWrapper>

@@ -3,10 +3,10 @@ import styled from "styled-components";
 export const DevsWrapper = styled.div`
   width: 100%;
   height: 100vh;
-  background: linear-gradient(
-    232.25deg,
-    #0ea8ec 3.61%,
-    rgba(53, 4, 85, 0.5) 100%
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(250, 92, 134, 0.2) 0%,
+    rgba(250, 92, 134, 0) 100%
   );
 `;
 export const DevsGrid = styled.div`
@@ -82,7 +82,7 @@ export const DevsButton = styled.button`
   padding: 20px 35px;
   width: 210px;
   height: 65px;
-  background: #27538c;
+  background-color: #08dcff;
   border-radius: 5px;
   font-weight: 600;
   color: #ffffff;

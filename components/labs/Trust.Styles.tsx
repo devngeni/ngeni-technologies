@@ -17,6 +17,7 @@ export const TrustGrid = styled.div`
   display: flex;
 `;
 export const TrustTitle = styled.h2`
+  font-family: 'Montserrat';
   font-weight: 700;
   font-size: 45.0286px;
   line-height: 76px;

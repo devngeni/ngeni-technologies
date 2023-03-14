@@ -23,6 +23,7 @@ export const SubscribeGrid = styled.div`
   }
 `;
 export const SubscribeTitle = styled.h2`
+  font-family: "Montserrat";
   font-weight: 500;
   font-size: 33.7714px;
   line-height: 51px;
@@ -32,6 +33,7 @@ export const SubscribeTitle = styled.h2`
   color: #000000;
 `;
 export const SubscribeText = styled.div`
+  font-family: "Montserrat";
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -52,6 +54,7 @@ export const Button = styled.button`
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  font-family: "Montserrat";
   &:hover {
     background: transparent;
     border: 1px solid #000000;
@@ -69,6 +72,7 @@ export const Input = styled.input`
   text-transform: uppercase;
   color: #000000;
   font-weight: 800;
+  font-family: "Montserrat";
   &:focus {
     outline: #41bfb3;
     border: 1px solid #fff;

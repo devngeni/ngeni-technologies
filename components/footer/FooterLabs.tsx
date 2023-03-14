@@ -25,12 +25,11 @@ export default function FooterLabs() {
             <Image src={Logo} width={192} height={37} alt="logo" />
           </FooterHeader>
           <FooterText>
-            NGENI LABS aims at being the go-to
-            <br /> company for solutions to solve the
-            <br /> world’s modern and most pressing
-            <br /> problems. We design and build using the
-            <br /> latest technologies while training
-            <br /> for impact.
+            NGENI LABs targets to be at the forefront
+            <br /> of solving modern and pressing challenges.
+            <br /> We design and build using the latest technologies
+            <br /> while shaping the young Afrikan developers
+            <br /> of tomorrow.
           </FooterText>
         </FooterGridItem>
         <FooterGridItem>
@@ -54,6 +53,7 @@ export default function FooterLabs() {
           <FooterText>Cookies</FooterText>
         </FooterGridItem>
       </FooterGrid>
+
       <FooterCopyRight>
         <LeftGrid>
           <FooterTitle

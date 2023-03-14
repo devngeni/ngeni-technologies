@@ -11,6 +11,7 @@ export const ToolsWrapper = styled.div`
   background: ${({ theme }) => theme.colors.main};
 `;
 export const ToolsTitle = styled.h1`
+  font-family: "Montserrat";
   display: flex;
   align-items: center;
   text-align: center;
@@ -26,6 +27,16 @@ export const ToolsTitle = styled.h1`
     flex-wrap: wrap;
     justify-content: center;
   }
+`;
+export const ToolsText = styled.p`
+  font-family: "Montserrat";
+  display: flex;
+  text-align: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+  color: ${({ theme }) => theme.colors.section};
 `;
 export const ToolsGrid = styled.div`
   background: url("/Wire.svg");

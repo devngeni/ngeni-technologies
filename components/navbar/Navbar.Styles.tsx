@@ -10,6 +10,7 @@ export const NavbarText = styled.div`
   flex-grow: 0;
   cursor: pointer;
   color: #fff;
+  font-family: "Montserrat";
   &:hover {
     color: #41bfb3;
   }
@@ -19,6 +20,7 @@ export const NavbarWrapper = styled.div`
   width: 100%;
   padding: 36px auto;
   align-items: center;
+  position: absolute;
   background-color: ${({ theme }) => theme.colors.background};
 `;
 
@@ -35,7 +37,7 @@ export const NavbarHeader = styled(Header)`
 `;
 export const NavbarGrid = styled(Grid)`
   grid-template-columns: 1fr 2fr;
-  padding: 20px 0;
+  padding: 30px 0;
   align-content: center;
   @media (max-width: 768px) {
     display: flex;
@@ -102,10 +104,10 @@ export const DesignNavMenuText = styled.div`
 `;
 
 export const NstarWrapper = styled.div`
-position: absolute;
-z-index: 1;
-width: 100%;
-background-color: transparent;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  background-color: transparent;
 `;
 export const NstarText = styled.div`
   font-family: "Quicksand";
@@ -150,16 +152,16 @@ export const NstarButton = styled.button`
 `;
 
 export const SideWrapper = styled.div`
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-align-content: center;
-height: 100vh;
-gap: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 100vh;
+  gap: 50px;
 `;
 export const SideNavText = styled.div`
-color: #3ebeb8;
-font-weight: 400;
-font-size: 20px;
+  color: #3ebeb8;
+  font-weight: 400;
+  font-size: 20px;
 `;

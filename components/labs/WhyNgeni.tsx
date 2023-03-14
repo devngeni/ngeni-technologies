@@ -14,14 +14,27 @@ export default function WhyNgeniSection() {
       <WhyContainer>
         <WhyGrid>
           <WhyTitle>
-            Why NGENI
+            WHY NGENI
             <br /> LABS?
           </WhyTitle>
           <WhyText>
-            NGENI LABS is actively engaged in creating the next
-            <br /> phase of the internet. We have built payment
-            <br /> gateways, exchanges and shipped some of the most
-            <br /> exciting blockchain projects in the recent past.
+            We BUILD+DESIGN+CREATE+IDEATE for NEW INTERNET ECONOMIES.
+            <br /> Ours Is a Profound Commitment in Building & Training.
+            <br />
+            <br /> At NGENI LABs, we are constantly pushing the boundaries of
+            Web3, FinTech,
+            <br /> and Blockchain technology, providing exceptional custom
+            software development
+            <br />
+            services to suit your business needs.
+            <br />
+            <br /> Our developer team delivers complex multi-blockchain
+            applications, bots, and dApps,
+            <br /> while employing the latest security protocols to protect your
+            data and assets. <br />
+            Our solutions are scalable, adaptable, and future-proof, with a
+            proven record of
+            <br /> success for diverse international clients.
           </WhyText>
           <Button>SEE CASE STUDIES</Button>
         </WhyGrid>

@@ -17,6 +17,7 @@ export const BusinessWrapper = styled(ToolsWrapper)`
 export const BusinessTitle = styled(ToolsTitle)`
   justify-content: start;
   align-items: flex-start;
+  font-family: "Montserrat";
 `;
 export const BusinessGrid = styled.div`
   display: grid;
@@ -64,13 +65,15 @@ export const BusinessCard = styled.div`
 `;
 
 export const BusinessCardTitle = styled.h1`
-  font-weight: 500;
+  font-family: "Montserrat";
+  font-weight: 700;
   font-size: 27.2118px;
   line-height: 130%;
   text-align: center;
   color: #ffffff;
 `;
 export const BusinessCardText = styled.p`
+  font-family: "Montserrat";
   text-align: center;
   font-weight: 500;
   font-size: 16px;
@@ -102,6 +105,7 @@ export const ProjectCard = styled.div`
   }
 `;
 export const ProjectTitle = styled.h1`
+  font-family: "Montserrat";
   font-weight: 700;
   font-size: 48px;
   line-height: 59px;
@@ -115,6 +119,7 @@ export const ProjectTitle = styled.h1`
   }
 `;
 export const ProjectText = styled.p`
+  font-family: "Montserrat";
   font-weight: 700;
   font-size: 14px;
   line-height: 17px;
@@ -150,24 +155,13 @@ export const ProjectContainer = styled.div`
   align-content: center;
   gap: 11px;
 `;
-export const ProjectLeft = styled.div<isHidden>`
+export const ProjectLeft = styled.div`
   background: #d9d9d9;
   padding: 50px 0;
-  display: ${({ hidden }) => (hidden ? "none" : "flex")};
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
-  transition: all 0.5s linear;
-  ${({ hidden }) =>
-    hidden
-      ? `
-    width: 0;
-    padding: 0;
-    flex-shrink: 1;
-  `
-      : `
-    width: 100%;
-    flex-grow: 1;
-  `}
+  transition: flex-basis 0.5s ease-in-out;
   @media (max-width: 768px) {
     padding: 0 20px;
   }
@@ -176,8 +170,9 @@ export const CompletedGrid = styled.div`
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: 100vh;
+  transition: all 0.5s ease-in-out;
 `;
-export const ProjectRight = styled.div<isExpanded>`
+export const ProjectRight = styled.div`
   background-image: url("/Boom.svg");
   background-repeat: no-repeat;
   background-size: contain;
@@ -185,43 +180,19 @@ export const ProjectRight = styled.div<isExpanded>`
   background-size: cover;
   width: 100%;
   height: 100%;
-  transition: all 0.5s ease;
-  transform: translateY(-100%);
-  animation: expand-right-grid 0.5s ease-in-out forwards;
-  animation-delay: 0.5s;
-
-  ${({ isExpanded }) =>
-    isExpanded &&
-    `
-    grid-column: 1 / -1;
-    transform: translateY(0%);
-    cursor: pointer;
-  `}
-  ${({ isAnimating }) =>
-    isAnimating &&
-    `
-  opacity: 1;
-`}
-
-@keyframes expand-right-grid {
-    0% {
-      transform: translateY(-100%);
-      height: 0;
-    }
-    100% {
-      transform: translateY(0%);
-      height: 100%;
-    }
-  }
+  transition: flex-basis 0.5s ease-in-out;
 `;
 
 export const ProjectCardTitle = styled.div`
+  font-family: "Montserrat";
   font-weight: 500;
   font-size: 32.9748px;
   line-height: 156.02%;
   color: #000000;
   cursor: pointer;
+  font-family: "Montserrat";
   span {
+    font-family: "Montserrat";
     &:hover {
       color: #3ebeb8;
       transition: 0.5s ease-in-out;
@@ -233,6 +204,7 @@ export const ProjectCardTitle = styled.div`
   }
 `;
 export const CompleteTitle = styled.h1`
+  font-family: "Montserrat";
   font-weight: 900;
   font-size: 96px;
   line-height: 115.02%;
@@ -246,6 +218,7 @@ export const CompleteTitle = styled.h1`
 export const CompleteText = styled(BusinessGrid)`
   display: flex;
   justify-content: center;
+  gap: 80px;
 `;
 export const CompleteCard = styled.div`
   display: flex;
@@ -262,6 +235,8 @@ export const WhyTitle = styled.div`
   display: flex;
   align-items: center;
   color: #ffffff;
+  font-family: "Montserrat";
+
   @media (max-width: 768px) {
     font-size: 48px;
     line-height: 59px;
@@ -289,6 +264,7 @@ export const WhyCard = styled.div`
   background-position: center;
 `;
 export const WhyText = styled.div`
+  font-family: "Montserrat";
   font-weight: 500;
   font-size: 16.2571px;
   line-height: 150%;
@@ -298,7 +274,7 @@ export const WhyText = styled.div`
 `;
 export const WhyContainer = styled.div`
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1.5fr 1fr;
   gap: 50px;
   width: 100%;
   @media (max-width: 768px) {

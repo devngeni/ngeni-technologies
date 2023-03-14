@@ -12,54 +12,31 @@ import {
 import Labs from "../../public/Labs.svg";
 import Image from "next/image";
 import Eclipse from "../../public/Ecllipse.svg";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 export default function CompletedSection() {
-  const [isExpanded, setIsExpanded] = useState(false);
-  const [isHidden, setIsHidden] = useState(false);
-  const [isAnimating, setIsAnimating] = useState(false);
-
-  const handleExpand = () => {
-    setIsAnimating(true);
-    setTimeout(() => {
-      setIsExpanded(true);
-      setIsHidden(true);
-      setIsAnimating(true);
-    }, 500);
-  };
-  useEffect(() => {
-    if (isAnimating) {
-      setTimeout(() => {
-        setIsHidden(true);
-      }, 250);
-    }
-  }, [isAnimating]);
-  const handleClick = (
-    isExpanded: boolean,
-    setIsExpanded: any,
-    isHidden: boolean,
-    setIsHidden: any
-  ) => {
-    if (isExpanded && isHidden) {
-      setIsExpanded(false);
-      setTimeout(() => {
-        setIsHidden(false);
-      }, 500);
-    }
+  const handleClick = () => {
+    const wrapper: any = document.querySelector(".Wrapper");
+    wrapper.style.gridTemplateColumns = "0fr 1fr";
+    const ProjectLeft: any = document.querySelector(".LeftGrid");
+    ProjectLeft.style.flexShrink = "0";
+    const ProjectRight: any = document.querySelector(".RightGrid");
+    ProjectRight.style.flexGrow = "1";
+    ProjectRight.style.width = "100vw";
   };
   return (
-    <CompletedGrid>
-      <ProjectLeft hidden={isHidden}>
+    <CompletedGrid className="Wrapper">
+      <ProjectLeft className="LeftGrid">
         <ProjectGrid>
           <Image src={Labs} width={41} height={34} alt="projects logo" />
-          <ProjectCardTitle>Building | Shaping | Moving</ProjectCardTitle>
+          <ProjectCardTitle>Design | Develop | Deliver</ProjectCardTitle>
           <Image
             src={Eclipse}
             width={41}
             height={34}
             alt="forwad icon"
             style={{ cursor: "pointer" }}
-            onClick={() => handleExpand()}
+            onClick={() => handleClick()}
           />
         </ProjectGrid>
         <CompleteCard>
@@ -75,20 +52,12 @@ export default function CompletedSection() {
             <br />| <span>Gema</span> | <span>Edge</span>
           </ProjectCardTitle>
           <ProjectCardTitle style={{ textAlign: "start", color: "#464646" }}>
-            Partnering with
-            <br /> leading
-            <br /> Blockchain players
-            <br /> globally
+            Partnering with leading
+            <br /> Blockchain players globally
           </ProjectCardTitle>
         </CompleteText>
       </ProjectLeft>
-      <ProjectRight
-        isExpanded={isExpanded}
-        isAnimating={isAnimating}
-        onClick={() =>
-          handleClick(isExpanded, setIsExpanded, isHidden, setIsHidden)
-        }
-      />
+      <ProjectRight className="RightGrid" />
     </CompletedGrid>
   );
 }

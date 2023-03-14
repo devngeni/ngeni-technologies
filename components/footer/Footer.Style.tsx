@@ -6,6 +6,7 @@ export const FooterWrapper = styled.footer`
   background-color: #000000;
   color: #ffffff;
   padding: 36px 20px;
+  justify-content: space-around;
 `;
 export const FooterGrid = styled(GridFlow)`
   justify-content: space-evenly;
@@ -52,9 +53,11 @@ export const FooterTitle = styled.div`
 `;
 
 export const FooterCopyRight = styled(FooterGrid)`
+  display: flex;
   justify-content: space-around;
+  align-items: center;
   align-content: center;
-  padding: 40px 0px;
+  padding: 20px 0px;
 `;
 
 export const FooterIcons = styled.div`
